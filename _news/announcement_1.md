@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2025-11-06 23:00:00-0000
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+We submitted our paper titled "EmbedTAD: Using Graph Embedding and Unsupervised Learning to Identify TADs from High-Resolution Hi-C Data." at C<a href="https://www.nature.com/commsbio/" target="_blank">Communications Biology</a> and under review.

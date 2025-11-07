@@ -1,14 +1,14 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - hmamohit
+  - OluwadareLab
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
+  - OluwadareLab/EmbedTAD
+  - OluwadareLab/HiCForecast
+  - OluwadareLab/ScHiCAtt
+  - OluwadareLab/coiTAD
+  - OluwadareLab/CNNSplice
+  - OluwadareLab/Comprehensive_Loop-Caller_Benchmark
   - jpswalsh/academicons
