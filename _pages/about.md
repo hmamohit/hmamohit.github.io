@@ -6,7 +6,7 @@ subtitle: Graduate Research Assistant at the <a href="https://oluwadarelab.com/"
 
 profile:
   align: right
-  image: about.jpg
+  image: about_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>F296, UNT Discovery Park</p>
