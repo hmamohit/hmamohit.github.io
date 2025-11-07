@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-repositories",
           title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          description: "Collection of my research projects, code implementations, and tools in machine learning, computer vision, and computational genomics.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
@@ -376,11 +376,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-we-submitted-our-paper-titled-robin-an-advanced-tool-for-comparative-loop-caller-analysis-leveraging-large-language-models-at-nar-genomics-and-bioinformatics-and-under-review",
-          title: 'We submitted our paper titled “Robin: An Advanced Tool for Comparative Loop Caller...',
+            },},{id: "news-i-started-phd-in-comupter-science-and-engineering-at-the-university-of-north-texas",
+          title: 'I started phd in comupter science and engineering at the University of North...',
           description: "",
-          section: "News",},{id: "news-i-started-phd-in-comupter-science-and-engineering-at-the-university-of-north-texas",
-          title: 'I started PhD in Comupter Science and Engineering at the University of North...',
+          section: "News",},{id: "news-we-submitted-our-paper-titled-robin-an-advanced-tool-for-comparative-loop-caller-analysis-leveraging-large-language-models-at-nar-genomics-and-bioinformatics-and-under-review",
+          title: 'We submitted our paper titled “Robin: An Advanced Tool for Comparative Loop Caller...',
           description: "",
           section: "News",},{id: "news-we-submitted-our-paper-titled-embedtad-using-graph-embedding-and-unsupervised-learning-to-identify-tads-from-high-resolution-hi-c-data-at-ccommunications-biology-and-under-review",
           title: 'We submitted our paper titled “EmbedTAD: Using Graph Embedding and Unsupervised Learning to...',
@@ -435,7 +435,7 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%68.%6D.%61.%6D%6F%68%69%74%63%68%6F%77%64%68%75%72%79@%6D%79.%75%6E%74.%65%64%75", "_blank");
+          window.open("mailto:%68%6D%61%6D%6F%68%69%74@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
         id: 'social-github',
@@ -443,6 +443,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://github.com/hmamohit", "_blank");
+        },
+      },{
+        id: 'social-leetcode',
+        title: 'LeetCode',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://leetcode.com/u/hmamohit/", "_blank");
         },
       },{
         id: 'social-linkedin',
@@ -478,13 +485,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://scholar.google.com/citations?user=plH24fQAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://leetcode.com/u/hmamohit/", "_blank");
         },
       },{
       id: 'light-theme',
