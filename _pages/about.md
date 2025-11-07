@@ -17,7 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: false # includes a list of news items
+  enabled: True # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
@@ -31,7 +31,7 @@ Hello! I'm H M A Mohit Chowdhury, a Ph.D. student in Computer Science and Engine
 
 My research aims to create new algorithms to study 3D genome organization using Hi-C data. I specialize in predicting chromatin loops and detecting Topologically Associating Domains (TADs). I apply deep learning, computer vision, graph embeddings, and clustering techniques to improve understanding in the biological field.
 
-I am skilled in Python, PyTorch, and cloud technologies like AWS and Docker. I have extensive experience building scalable systems and deploying machine learning models. I enjoy combining solid theoretical research with practical, real-world applications.
+I am skilled in Python, PyTorch, Java, Spring, C#, .NET and cloud technologies like AWS and Docker. I have extensive experience building scalable systems and deploying machine learning models. I enjoy combining solid theoretical research with practical, real-world applications.
 
 Outside of my work, I like to explore new places, capture moments through photography, spend quality time with friends, watch movies, and listen to music. My friends and family call me Shadhin, which means "independent". I try to embody this trait in my personal and professional life.
 

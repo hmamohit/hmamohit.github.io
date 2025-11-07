@@ -4,7 +4,7 @@ permalink: /cv/
 title: cv
 nav: true
 nav_order: 5
-cv_pdf: chowdhury_resume.pdf # you can also use external links here
+cv_pdf: chowdhury_cv.pdf # you can also use external links here
 description: Detailed overview of my academic background, research experience, and professional accomplishments.
 toc:
   sidebar: left

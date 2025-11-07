@@ -2,96 +2,166 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: H. M. A. Mohit Chowdhury
+    - name: Title
+      value: Graduate Research Assistant
+    - name: Email
+      value: hmamohit@gmail.com
+    - name: Website
+      value: https://hmamohit.github.io
+    - name: Phone
+      value: (719) 412-4139
+    - name: Location
+      value: Denton, Texas, USA
     - name: Languages
-      value: English, German
+      value: English, Bengali
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: PhD in Computer Science and Engineering
+      institution: University of North Texas, Denton, TX
+      year: 2025 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Graduate Research Assistant at Oluwadare Lab.
+        - Focus on machine learning, computer vision, and graph-based genomic data analysis.
+    - title: MSc in Computer Science
+      institution: University of Colorado Colorado Springs, CO
+      year: 2022 - 2024
       description:
-        - Description 1.
-        - Description 2.
+        - GPA: 3.876
+        - Research on deep learning for genomic data analysis.
+    - title: BSc in Computer Science and Engineering
+      institution: Ahsanullah University of Science and Technology, Dhaka, Bangladesh
+      year: 2013 - 2017
+      description:
+        - GPA: 3.71
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Graduate Research Assistant
+      institution: Oluwadare Lab, University of North Texas
+      year: 2022 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Develop algorithms in computer vision for time-series forecasting, interpolation, diffusion, and graph embeddings.
+        - Designed CNN-based deep learning models for splice site prediction in DNA sequences.
+        - Built computational models for TAD detection using graph-based embeddings and clustering.
+        - Developed a web server for genomic analysis tools using Flask, Docker, and JavaScript.
+    - title: Solution Developer
+      institution: Otto International
+      year: 2022
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Designed AWS infrastructure using Terraform for automated deployment.
+        - Improved ESB performance and reliability using Java (Micronaut) and PostgreSQL.
+        - Developed CI/CD pipelines with Jenkins to enhance release reliability.
+    - title: Software Engineer
+      institution: Dovetail Technology
+      year: 2020 - 2022
       description:
+        - Designed and developed Volmet system using C#, .NET Web API, and MSSQL.
+        - Built Windows services supporting a microservice-like architecture.
+    - title: Software Engineer
+      institution: IdeaScale Bangladesh
+      year: 2019 - 2020
+      description:
+        - Developed features and maintained systems using Java, Spring, MySQL, and Docker.
+        - Refactored SQL queries to JPA and Querydsl for maintainability.
+    - title: Software Engineer
+      institution: Netweaver Software Limited
+      year: 2017 - 2019
+      description:
+        - Built e-commerce platforms using Java, Spring Boot, MySQL, and JavaScript.
+        - Developed a doctor and hospital directory using Node.js, Vue.js, and PostgreSQL.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Publications
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Robin: An Advanced Tool for Comparative Loop Caller Result Analysis Leveraging Large Language Models
+      institution: Cold Spring Harbor Laboratory
+      year: 2025
+      description:
+        - <a href="https://www.biorxiv.org/content/10.1101/2025.04.05.646688v1">Link</a>
+    - title: ScHiCAtt: Hi-C Super Resolution Using Attention Methods for Single Cell
+      institution: Elsevier
+      year: 2025
+      description:
+        - <a href="https://doi.org/10.1016/j.csbj.2025.02.031">Link</a>
+    - title: HiCForecast: Dynamic Network Optical Flow Estimation Algorithm for Spatiotemporal Hi-C Data Forecasting
+      institution: Oxford University Press
+      year: 2025
+      description:
+        - <a href="https://doi.org/10.1093/bioinformatics/btaf030">Link</a>
+    - title: coiTAD: Detection of Topologically Associating Domains Based on Clustering of Circular Influence Features from Hi-C Data
+      institution: MDPI
+      year: 2024
+      description:
+        - <a href="https://doi.org/10.3390/genes15101293">Link</a>
+    - title: Comparative Study on Chromatin Loop Callers Using Hi-C Data Reveals Their Effectiveness
+      institution: BioMed Central
+      year: 2024
+      description:
+        - <a href="https://doi.org/10.1186/s12859-024-05713-w">Link</a>
+    - title: CNNSplice: Robust Models for Splice Site Prediction Using Convolutional Neural Networks
+      institution: Elsevier
+      year: 2023
+      description:
+        - <a href="https://doi.org/10.1016/j.csbj.2023.05.031">Link</a>
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2025
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - CENG Anticipated Award - University of North Texas
+    - year: 2023
       items:
-        - Max Planck Medal
+        - Graduate School Travel Award - University of Colorado Colorado Springs
+        - Tuition Matching Grant Award - University of Colorado Colorado Springs
+    - year: 2022
+      items:
+        - Tuition Matching Grant Award - University of Colorado Colorado Springs
+
+- title: Certificates
+  type: list
+  contents:
+    - Tableau Fundamentals - Tableau (2024)
+    - Responsible Conduct of Research (RCR-mini) - University of Colorado Colorado Springs (2024)
+
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Programming Languages
+      items:
+        - Python, Java, C#, C, JavaScript
+    - title: Frameworks
+      items:
+        - PyTorch, scikit-learn, Spring, .NET
+    - title: Databases
+      items:
+        - MySQL, MSSQL
+    - title: Deployment
+      items:
+        - AWS, Docker, Terraform
+    - title: Operating Systems
+      items:
+        - Linux, Windows, macOS
+    - title: Others
+      items:
+        - Git, CMD, SLURM
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Computer Vision
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+        - Time Series Forecasting
+        - Interpolation
+        - Diffusion
+        - Graph Embedding
+        - Clustering
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Exploring, Photography, Movies, Music, and spending time with friends.

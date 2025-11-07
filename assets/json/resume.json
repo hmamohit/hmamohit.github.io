@@ -2,7 +2,7 @@
   "basics": {
     "name": "H. M. A. Mohit Chowdhury",
     "label": "Graduate Research Assistant",
-    "image": "profile.jpg",
+    "image": "/assets/img/profile.jpg",
     "email": "hmamohit@gmail.com",
     "phone": "(719) 412-4139",
     "url": "https://hmamohit.github.io",
@@ -106,11 +106,27 @@
       "summary": ""
     }
   ],
+  "reviewer": [
+    {
+      "name": "Scientific Reports",
+      "publisher": "Nature Portfolio",
+      "releaseDate": "2025-11-03",
+      "url": "https://www.nature.com/srep/",
+      "summary": ""
+    },
+    {
+      "name": "IEEE International Conference on Bioinformatics and Biomedicine",
+      "publisher": "Nature Portfolio",
+      "releaseDate": "2024-02-03",
+      "url": "https://ieeexplore.ieee.org/xpl/conhome/1001586/all-proceedings",
+      "summary": ""
+    }
+  ],
   "skills": [
     {
       "name": "Programming Language",
       "level": "Master",
-      "icon": "fa-solid fa-product-hunt",
+      "icon": "fa-solid fa-pen-nib",
       "keywords": [
         "Python",
         "Java",
@@ -252,28 +268,28 @@
   "awards": [
     {
       "title": "CENG Anticipated Award",
-      "date": "2025-08-01",
+      "date": "2025-08-15",
       "awarder": "University of North Texas",
       "url": "",
       "summary": ""
     },
     {
       "title": "Graduate School Travel Award",
-      "date": "2023-12-01",
+      "date": "2024-12-17",
       "awarder": "University of Colorado Colorado Springs",
       "url": "",
       "summary": ""
     },
     {
       "title": "Tuition Matching Grant Award",
-      "date": "2023-08-01",
+      "date": "2023-08-18",
       "awarder": "University of Colorado Colorado Springs",
       "url": "",
       "summary": ""
     },
     {
       "title": "Tuition Matching Grant Award",
-      "date": "2022-08-01",
+      "date": "2022-08-18",
       "awarder": "University of Colorado Colorado Springs",
       "url": "",
       "summary": ""
@@ -298,12 +314,12 @@
   "languages": [
     {
       "language": "English",
-      "fluency": "Fluent",
+      "fluency": "Upper-Intermediate",
       "icon": ""
     },
     {
       "language": "Bengali",
-      "fluency": "Fluent",
+      "fluency": "Proficiency",
       "icon": ""
     }
   ],

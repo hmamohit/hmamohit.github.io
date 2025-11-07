@@ -2,11 +2,11 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Chowdhury's Personal Site # the website title (if blank, full name will be used instead)
+title: chowdhury's profile # the website title (if blank, full name will be used instead)
 first_name: H. M. A. Mohit
 middle_name:
 last_name: Chowdhury
-contact_note: reachout to me via email
+contact_note: Got a question, idea, or collaboration in mind? I’d love to hear from you!
   # You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:" 
 footer_text: >
@@ -631,6 +631,7 @@ jsonresume:
   - basics
   - education
   - publications
+  - reviewer
   - skills
   - work
   - certificates

@@ -11,7 +11,6 @@
 # dblp_url: # your DBLP profile url
 # discord_id: # your discord id (18-digit unique numerical identifier)
 email: hmamohit@gmail.com # your email address
-email: h.m.a.mohitchowdhury@my.unt.edu # your email address
 # facebook_id: # your facebook id
 # flickr_id: # your flickr id
 github_username: hmamohit # your GitHub user name
@@ -24,7 +23,7 @@ github_username: hmamohit # your GitHub user name
 # keybase_username: # your keybase user name
 # lastfm_id: # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
-# leetcode_id: # your LeetCode id
+leetcode_id: hmamohit # your LeetCode id
 linkedin_username: h-m-a-mohit-chowdhury # your LinkedIn user name
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
@@ -51,7 +50,7 @@ scholar_userid: plH24fQAAAAJ # your Google Scholar ID
 # x_username: # your X handle
 # youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 # zotero_username: # your zotero username
-custom_social: # can be any name here other than the ones already defined above
-  logo: https://assets.leetcode.com/users/leetcode/avatar_1568224780.png # can be png, svg, jpg
-  title: LeetCode
-  url: https://leetcode.com/u/hmamohit/
+#custom_social: # can be any name here other than the ones already defined above
+#  logo: https://assets.leetcode.com/users/leetcode/avatar_1568224780.png # can be png, svg, jpg
+#  title: LeetCode
+#  url: https://leetcode.com/u/hmamohit/
