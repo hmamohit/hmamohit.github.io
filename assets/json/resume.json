@@ -16,22 +16,122 @@
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "Linkedin",
+        "username": "h-m-a-mohit-chowdhury",
+        "url": "https://www.linkedin.com/in/h-m-a-mohit-chowdhury/"
       }
     ]
   },
+  "education": [
+    {
+      "institution": "University of North Texas",
+      "location": "Denton, TX",
+      "url": "https://www.unt.edu/",
+      "area": "Computer Science and Engineering",
+      "studyType": "PhD",
+      "startDate": "2025-08-17",
+      "endDate": "Present",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "University of North Texas",
+      "location": "Colorado Springs, CO",
+      "url": "https://www.uccs.edu/",
+      "area": "Computer Science",
+      "studyType": "MSc",
+      "startDate": "2022-08-18",
+      "endDate": "2024-12-24",
+      "score": "3.876",
+      "courses": []
+    },
+    {
+      "institution": "Ahsanullah University of Science and Technology",
+      "location": "Dhaka, Bangladesh",
+      "url": "https://aust.edu/",
+      "area": "Computer Science and Engineering",
+      "studyType": "BSc",
+      "startDate": "2013-04-13",
+      "endDate": "2017-07-17",
+      "score": "3.71",
+      "courses": []
+    }
+  ],
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "name": "Oluwadare Lab",
+      "position": "Graduate Research Assistant",
+      "url": "https://oluwadarelab.com/",
+      "startDate": "2022-08-18",
+      "endDate": "Present",
+      "summary": "",
       "highlights": [
-        "Relativity"
+        "Researching the development of novel algorithms in computer vision—specifically for time-series forecasting, interpolation, diffusion, graph embeddings, and clustering, to study 3D genome organization using Hi-C data, with a focus on chromatin loop prediction, TAD detection, and Hi-C data prediction.",
+        "Developed a CNN-based deep learning model to predict splice sites in DNA sequences.",
+        "Designed computer vision models to predict Hi-C contact maps for time-series analysis.",
+        "Built computational models for TAD detection, including a graph-based framework with network embeddings and clustering.",
+        "Conducted a study comparing chromatin loop detection methods to assess existing approaches.",
+        "Built a web server for genomic analysis tools using Flask, HTML, CSS, JavaScript, and Docker to improve accessibility.",
+        "Collaborated on projects, providing data support, research help, and assistance with server management.",
+        "Reviewed manuscripts and co-authored publications in computational genomics and machine learning."
+      ]
+    },
+    {
+      "name": "Otto International",
+      "position": "Solution Developer",
+      "url": "https://ottoint.com",
+      "startDate": "2022-01-16",
+      "endDate": "2022-08-15",
+      "summary": "",
+      "highlights": [
+        "Designed and built AWS infrastructure for the Enterprise Service Bus (ESB) using Terraform. This setup allowed for automated and repeatable deployments.",
+        "Fixed critical bugs and improved ESB performance by redesigning components in Java (Micronaut) and PostgreSQL.",
+        "Developed and deployed CI/CD pipelines with Jenkins to improve release reliability.",
+        "Worked closely with business analysts and engineering teams to adjust system requirements and successfully integrate their applications with the ESB.",
+        "I helped with knowledge sharing and documentation to support long-term scalability and maintainability."
+      ]
+    },
+    {
+      "name": "Dovetail Technology",
+      "position": "Software Engineer",
+      "url": "",
+      "startDate": "2020-05-01",
+      "endDate": "2022-01-14",
+      "summary": "",
+      "highlights": [
+        "Designed and developed the Volmet system with C#, .NET Web API, and MSSQL.",
+        "Deployed the entire system on the IIS Web Server for production use.",
+        "Built Windows services to support the Volmet system, using a microservices-inspired architecture to improve reliability.",
+        "Helped the frontend team by contributing to development and integration with AngularJS.",
+        "Worked with the business analyst and automation team to simplify requirements and expand the development process."
+      ]
+    },
+    {
+      "name": "IdeaScale Bangladesh",
+      "position": "Software Engineer",
+      "url": "https://ideascale.com/",
+      "startDate": "2019-08-01",
+      "endDate": "2020-04-30",
+      "summary": "",
+      "highlights": [
+        "Developed and integrated new features while updating existing ones to meet changing business needs using Java, Spring, MySQL, and Docker.",
+        "Fixed bugs and improved platform stability to enhance user experience.",
+        "Refactored old raw SQL queries into JPA and Querydsl, which simplified the code and made it easier to maintain.",
+        "Worked with team members to ensure scalability and a smooth transition to new processes."
+      ]
+    },
+    {
+      "name": "Netweaver Software Limited",
+      "position": "Software Engineer",
+      "url": "",
+      "startDate": "2017-08-01",
+      "endDate": "2019-07-31",
+      "summary": "",
+      "highlights": [
+        "Designed and developed two e-commerce platforms using Java, Spring Boot, MySQL, SAPUI5, and JavaScript.",
+        "Built a comprehensive directory for doctor and hospital information, using Node.js, Vue.js, and PostgreSQL.",
+        "Focused on responsive design, scalability, and seamless integration between frontend and backend components.",
+        "Worked with different teams to clarify requirements and deliver ready-to-use applications."
       ]
     }
   ],
@@ -47,21 +147,6 @@
       "highlights": [
         "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.",
         "Men of the year 2014 by Time magazine"
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": [
-        "Theory of Relativity"
       ]
     }
   ],
