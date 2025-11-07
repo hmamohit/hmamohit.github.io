@@ -77,22 +77,22 @@
 - title: Publications
   type: time_table
   contents:
-    - title: Robin: An Advanced Tool for Comparative Loop Caller Result Analysis Leveraging Large Language Models
+    - title: "Robin: An Advanced Tool for Comparative Loop Caller Result Analysis Leveraging Large Language Models"
       institution: Cold Spring Harbor Laboratory
       year: 2025
       description:
         - <a href="https://www.biorxiv.org/content/10.1101/2025.04.05.646688v1">Link</a>
-    - title: ScHiCAtt: Hi-C Super Resolution Using Attention Methods for Single Cell
+    - title: "ScHiCAtt: Hi-C Super Resolution Using Attention Methods for Single Cell"
       institution: Elsevier
       year: 2025
       description:
         - <a href="https://doi.org/10.1016/j.csbj.2025.02.031">Link</a>
-    - title: HiCForecast: Dynamic Network Optical Flow Estimation Algorithm for Spatiotemporal Hi-C Data Forecasting
+    - title: "HiCForecast: Dynamic Network Optical Flow Estimation Algorithm for Spatiotemporal Hi-C Data Forecasting"
       institution: Oxford University Press
       year: 2025
       description:
         - <a href="https://doi.org/10.1093/bioinformatics/btaf030">Link</a>
-    - title: coiTAD: Detection of Topologically Associating Domains Based on Clustering of Circular Influence Features from Hi-C Data
+    - title: "coiTAD: Detection of Topologically Associating Domains Based on Clustering of Circular Influence Features from Hi-C Data"
       institution: MDPI
       year: 2024
       description:
@@ -102,7 +102,7 @@
       year: 2024
       description:
         - <a href="https://doi.org/10.1186/s12859-024-05713-w">Link</a>
-    - title: CNNSplice: Robust Models for Splice Site Prediction Using Convolutional Neural Networks
+    - title: "CNNSplice: Robust Models for Splice Site Prediction Using Convolutional Neural Networks"
       institution: Elsevier
       year: 2023
       description:
