@@ -377,12 +377,12 @@ ninja.data = [{
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
             },},{id: "news-i-started-phd-in-comupter-science-and-engineering-at-the-university-of-north-texas",
-          title: 'I started phd in comupter science and engineering at the University of North...',
+          title: 'I started PhD in Comupter Science and Engineering at the University of North...',
           description: "",
           section: "News",},{id: "news-we-submitted-our-paper-titled-robin-an-advanced-tool-for-comparative-loop-caller-analysis-leveraging-large-language-models-at-nar-genomics-and-bioinformatics-and-under-review",
           title: 'We submitted our paper titled “Robin: An Advanced Tool for Comparative Loop Caller...',
           description: "",
-          section: "News",},{id: "news-we-submitted-our-paper-titled-embedtad-using-graph-embedding-and-unsupervised-learning-to-identify-tads-from-high-resolution-hi-c-data-at-ccommunications-biology-and-under-review",
+          section: "News",},{id: "news-we-submitted-our-paper-titled-embedtad-using-graph-embedding-and-unsupervised-learning-to-identify-tads-from-high-resolution-hi-c-data-at-communications-biology-and-under-review",
           title: 'We submitted our paper titled “EmbedTAD: Using Graph Embedding and Unsupervised Learning to...',
           description: "",
           section: "News",},{id: "projects-project-1",
