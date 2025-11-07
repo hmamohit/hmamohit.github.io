@@ -18,12 +18,27 @@
       {
         "network": "LinkedIn",
         "username": "h-m-a-mohit-chowdhury",
-        "url": "https://www.linkedin.com/in/"
+        "url": "https://www.linkedin.com/"
+      },
+      {
+        "network": "Google Scholar",
+        "username": "plH24fQAAAAJ",
+        "url": "https://scholar.google.com"
+      },
+      {
+        "network": "ResearchGate",
+        "username": "H-M-A-Mohit-Chowdhury",
+        "url": "https://www.researchgate.net/"
+      },
+      {
+        "network": "ORCID",
+        "username": "0009-0000-8687-4064",
+        "url": "https://orcid.org/"
       },
       {
         "network": "LeetCode",
         "username": "hmamohit",
-        "url": "https://leetcode.com/u/"
+        "url": "https://leetcode.com/"
       }
     ]
   },
@@ -110,14 +125,14 @@
     {
       "name": "Scientific Reports",
       "publisher": "Nature Portfolio",
-      "releaseDate": "2025-11-03",
+      "releaseDate": "",
       "url": "https://www.nature.com/srep/",
       "summary": ""
     },
     {
       "name": "IEEE International Conference on Bioinformatics and Biomedicine",
       "publisher": "Nature Portfolio",
-      "releaseDate": "2024-02-03",
+      "releaseDate": "",
       "url": "https://ieeexplore.ieee.org/xpl/conhome/1001586/all-proceedings",
       "summary": ""
     }

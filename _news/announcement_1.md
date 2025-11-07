@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2025-11-06 23:00:00-0000
+date: 2025-08-15 23:00:00-0000
 inline: true
 related_posts: false
 ---
 
-We submitted our paper titled "EmbedTAD: Using Graph Embedding and Unsupervised Learning to Identify TADs from High-Resolution Hi-C Data." at C<a href="https://www.nature.com/commsbio/" target="_blank">Communications Biology</a> and under review.
+I started PhD in Comupter Science and Engineering at the <a href="https://www.unt.edu/" target="_blank">University of North Texas</a>.
