@@ -30,12 +30,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-started-phd-in-comupter-science-and-engineering-at-the-university-of-north-texas",
+        },{id: "news-i-started-phd-in-comupter-science-and-engineering-at-the-university-of-north-texas",
           title: 'I started PhD in Comupter Science and Engineering at the University of North...',
           description: "",
           section: "News",},{id: "news-we-submitted-our-paper-titled-robin-an-advanced-tool-for-comparative-loop-caller-analysis-leveraging-large-language-models-at-nar-genomics-and-bioinformatics-and-under-review",
