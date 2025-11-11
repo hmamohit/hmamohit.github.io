@@ -39,6 +39,9 @@ ninja.data = [{
           section: "News",},{id: "news-we-submitted-our-paper-titled-embedtad-using-graph-embedding-and-unsupervised-learning-to-identify-tads-from-high-resolution-hi-c-data-at-communications-biology-and-under-review",
           title: 'We submitted our paper titled “EmbedTAD: Using Graph Embedding and Unsupervised Learning to...',
           description: "",
+          section: "News",},{id: "news-our-paper-titled-embedtad-using-graph-embedding-and-unsupervised-learning-to-identify-tads-from-high-resolution-hi-c-data-has-been-accepted-at-communications-biology-congratulations",
+          title: 'Our paper titled “EmbedTAD Using Graph Embedding and Unsupervised Learning to Identify TADs...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
