@@ -4,7 +4,7 @@
     "label": "Graduate Research Assistant",
     "image": "/assets/img/profile.jpg",
     "email": "hmamohit@gmail.com",
-    "phone": "(719) 412-4139",
+    "phone": "",
     "url": "https://hmamohit.github.io",
     "summary": "PhD student in Computer Science and Engineering and Research Assistant with a focus on machine learning, computer vision—specifically for time-series forecasting, interpolation, diffusion, graph embedding, and clustering. I have experience in developing deep learning models, forecasting time series, creating data embeddings, clustering, and designing scalable systems. I am skilled in deploying solutions using Python, PyTorch, and cloud platforms, as well as building full-stack tools. I am passionate about improving AI research by combining strong algorithm design with practical applications in complex data areas.",
     "location": {
