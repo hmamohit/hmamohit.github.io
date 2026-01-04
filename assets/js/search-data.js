@@ -30,7 +30,10 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-i-started-phd-in-comupter-science-and-engineering-at-the-university-of-north-texas",
+        },{id: "news-our-paper-titled-embedtad-using-graph-embedding-and-unsupervised-learning-to-identify-tads-from-high-resolution-hi-c-data-has-been-published-at-communications-biology-congratulations-open-access-https-doi-org-10-1038-s42003-025-09224-z",
+          title: 'Our paper titled “EmbedTAD Using Graph Embedding and Unsupervised Learning to Identify TADs...',
+          description: "",
+          section: "News",},{id: "news-i-started-phd-in-comupter-science-and-engineering-at-the-university-of-north-texas",
           title: 'I started PhD in Comupter Science and Engineering at the University of North...',
           description: "",
           section: "News",},{id: "news-we-submitted-our-paper-titled-robin-an-advanced-tool-for-comparative-loop-caller-analysis-leveraging-large-language-models-at-nar-genomics-and-bioinformatics-and-under-review",
@@ -40,9 +43,6 @@ ninja.data = [{
           title: 'We submitted our paper titled “EmbedTAD: Using Graph Embedding and Unsupervised Learning to...',
           description: "",
           section: "News",},{id: "news-our-paper-titled-embedtad-using-graph-embedding-and-unsupervised-learning-to-identify-tads-from-high-resolution-hi-c-data-has-been-accepted-at-communications-biology-congratulations",
-          title: 'Our paper titled “EmbedTAD Using Graph Embedding and Unsupervised Learning to Identify TADs...',
-          description: "",
-          section: "News",},{id: "news-our-paper-titled-embedtad-using-graph-embedding-and-unsupervised-learning-to-identify-tads-from-high-resolution-hi-c-data-has-been-published-at-communications-biology-congratulations-open-access-https-doi-org-10-1038-s42003-025-09224-z",
           title: 'Our paper titled “EmbedTAD Using Graph Embedding and Unsupervised Learning to Identify TADs...',
           description: "",
           section: "News",},{
