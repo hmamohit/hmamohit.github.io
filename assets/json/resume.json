@@ -79,43 +79,50 @@
   ],
   "publications": [
     {
+      "name": "EmbedTAD Using Graph Embedding and Unsupervised Learning to Identify TADs from High-Resolution Hi-C Data.",
+      "publisher": "Communications Biology",
+      "releaseDate": "2025-12-09",
+      "url": "https://doi.org/10.1038/s42003-025-09224-z",
+      "summary": ""
+    },
+    {
       "name": "Robin: An Advanced Tool for Comparative Loop Caller Result Analysis Leveraging Large Language Models",
-      "publisher": "Cold Spring Harbor Laboratory",
+      "publisher": "bioRxiv",
       "releaseDate": "2025-04-09",
       "url": "https://www.biorxiv.org/content/10.1101/2025.04.05.646688v1",
       "summary": ""
     },
     {
       "name": "ScHiCAtt: Hi-C Super Resolution Using Attention Methods for Single Cell",
-      "publisher": "Elsevier",
+      "publisher": "Computational and Structural Biotechnology Journal",
       "releaseDate": "2025-02-27",
       "url": "https://doi.org/10.1016/j.csbj.2025.02.031",
       "summary": ""
     },
     {
       "name": "HiCForecast: dynamic network optical flow estimation algorithm for spatiotemporal Hi-C data forecasting",
-      "publisher": "Oxford University Press",
+      "publisher": "Bioinformatics",
       "releaseDate": "2025-01-22",
       "url": "https://doi.org/10.1093/bioinformatics/btaf030",
       "summary": ""
     },
     {
       "name": "coiTAD: Detection of Topologically Associating Domains Based on Clustering of Circular Influence Features from Hi-C Data",
-      "publisher": "MDPI",
+      "publisher": "Genes",
       "releaseDate": "2024-09-30",
       "url": "https://doi.org/10.3390/genes15101293",
       "summary": ""
     },
     {
       "name": "Comparative study on chromatin loop callers using Hi-C data reveals their effectiveness",
-      "publisher": "BioMed Central",
+      "publisher": "BMC bioinformatics",
       "releaseDate": "2024-03-21",
       "url": "https://doi.org/10.1186/s12859-024-05713-w",
       "summary": ""
     },
     {
       "name": "CNNSplice: Robust models for splice site prediction using convolutional neural networks",
-      "publisher": "Elsevier",
+      "publisher": "Computational and Structural Biotechnology Journal",
       "releaseDate": "2023-01-01",
       "url": "https://doi.org/10.1016/j.csbj.2023.05.031",
       "summary": ""
@@ -127,6 +134,13 @@
       "publisher": "Nature Portfolio",
       "releaseDate": "",
       "url": "https://www.nature.com/srep/",
+      "summary": ""
+    },
+    {
+      "name": "BioData Mining",
+      "publisher": "BMC",
+      "releaseDate": "",
+      "url": "https://link.springer.com/journal/13040",
       "summary": ""
     },
     {
