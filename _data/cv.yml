@@ -77,33 +77,38 @@
 - title: Publications
   type: time_table
   contents:
+    - title: "EmbedTAD Using Graph Embedding and Unsupervised Learning to Identify TADs from High-Resolution Hi-C Data."
+      institution: Communications Biology
+      year: 2025
+      description:
+        - <a href="https://doi.org/10.1038/s42003-025-09224-z">Link</a>
     - title: "Robin: An Advanced Tool for Comparative Loop Caller Result Analysis Leveraging Large Language Models"
-      institution: Cold Spring Harbor Laboratory
+      institution: bioRxiv
       year: 2025
       description:
         - <a href="https://www.biorxiv.org/content/10.1101/2025.04.05.646688v1">Link</a>
     - title: "ScHiCAtt: Hi-C Super Resolution Using Attention Methods for Single Cell"
-      institution: Elsevier
+      institution: Computational and Structural Biotechnology Journal
       year: 2025
       description:
         - <a href="https://doi.org/10.1016/j.csbj.2025.02.031">Link</a>
     - title: "HiCForecast: Dynamic Network Optical Flow Estimation Algorithm for Spatiotemporal Hi-C Data Forecasting"
-      institution: Oxford University Press
+      institution: Bioinformatics
       year: 2025
       description:
         - <a href="https://doi.org/10.1093/bioinformatics/btaf030">Link</a>
     - title: "coiTAD: Detection of Topologically Associating Domains Based on Clustering of Circular Influence Features from Hi-C Data"
-      institution: MDPI
+      institution: Genes
       year: 2024
       description:
         - <a href="https://doi.org/10.3390/genes15101293">Link</a>
     - title: Comparative Study on Chromatin Loop Callers Using Hi-C Data Reveals Their Effectiveness
-      institution: BioMed Central
+      institution: BMC bioinformatics
       year: 2024
       description:
         - <a href="https://doi.org/10.1186/s12859-024-05713-w">Link</a>
     - title: "CNNSplice: Robust Models for Splice Site Prediction Using Convolutional Neural Networks"
-      institution: Elsevier
+      institution: Computational and Structural Biotechnology Journal
       year: 2023
       description:
         - <a href="https://doi.org/10.1016/j.csbj.2023.05.031">Link</a>
