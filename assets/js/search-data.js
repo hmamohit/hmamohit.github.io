@@ -48,6 +48,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-titled-robin-an-advanced-tool-for-comparative-loop-caller-analysis-leveraging-large-language-models-has-been-accepted-at-nar-genomics-and-bioinformatics",
           title: 'Our paper titled “Robin: An Advanced Tool for Comparative Loop Caller Analysis Leveraging...',
           description: "",
+          section: "News",},{id: "news-our-paper-titled-robin-an-advanced-tool-for-comparative-loop-caller-analysis-leveraging-large-language-models-has-been-published-at-nar-genomics-and-bioinformatics-open-access-open-access-https-doi-org-10-1093-nargab-lqag009",
+          title: 'Our paper titled “Robin: An Advanced Tool for Comparative Loop Caller Analysis Leveraging...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
