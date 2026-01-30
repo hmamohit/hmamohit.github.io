@@ -49,7 +49,7 @@
       "url": "https://www.unt.edu/",
       "area": "Computer Science and Engineering",
       "studyType": "PhD",
-      "startDate": "2025-08-17",
+      "startDate": "2022-08-18",
       "endDate": "Present",
       "score": "-.--",
       "courses": []
@@ -79,17 +79,17 @@
   ],
   "publications": [
     {
+      "name": "Robin: An Advanced Tool for Comparative Loop Caller Result Analysis Leveraging Large Language Models",
+      "publisher": "NAR Genomics and Bioinformatics",
+      "releaseDate": "2026-01-30",
+      "url": "https://doi.org/10.1093/nargab/lqag009",
+      "summary": ""
+    },
+    {
       "name": "EmbedTAD Using Graph Embedding and Unsupervised Learning to Identify TADs from High-Resolution Hi-C Data.",
       "publisher": "Communications Biology",
       "releaseDate": "2025-12-09",
       "url": "https://doi.org/10.1038/s42003-025-09224-z",
-      "summary": ""
-    },
-    {
-      "name": "Robin: An Advanced Tool for Comparative Loop Caller Result Analysis Leveraging Large Language Models",
-      "publisher": "bioRxiv",
-      "releaseDate": "2025-04-09",
-      "url": "https://www.biorxiv.org/content/10.1101/2025.04.05.646688v1",
       "summary": ""
     },
     {

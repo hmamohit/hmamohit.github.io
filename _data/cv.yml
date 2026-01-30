@@ -21,7 +21,7 @@
   contents:
     - title: PhD in Computer Science and Engineering
       institution: University of North Texas, Denton, TX
-      year: 2025 - Present
+      year: 2022 - Present
       description:
         - Graduate Research Assistant at Oluwadare Lab.
         - Focus on machine learning, computer vision, and graph-based genomic data analysis.
@@ -77,16 +77,16 @@
 - title: Publications
   type: time_table
   contents:
+    - title: "Robin: an advanced tool for comparative loop caller result analysis leveraging large language models"
+      institution: NAR Genomics and Bioinformatics
+      year: 2026
+      description:
+        - <a href="https://doi.org/10.1093/nargab/lqag009">Link</a>
     - title: "EmbedTAD Using Graph Embedding and Unsupervised Learning to Identify TADs from High-Resolution Hi-C Data."
       institution: Communications Biology
       year: 2025
       description:
         - <a href="https://doi.org/10.1038/s42003-025-09224-z">Link</a>
-    - title: "Robin: An Advanced Tool for Comparative Loop Caller Result Analysis Leveraging Large Language Models"
-      institution: bioRxiv
-      year: 2025
-      description:
-        - <a href="https://www.biorxiv.org/content/10.1101/2025.04.05.646688v1">Link</a>
     - title: "ScHiCAtt: Hi-C Super Resolution Using Attention Methods for Single Cell"
       institution: Computational and Structural Biotechnology Journal
       year: 2025
