@@ -6,13 +6,13 @@
     "email": "hmamohit@gmail.com",
     "phone": "",
     "url": "https://hmamohit.github.io",
-    "summary": "PhD student in Computer Science and Engineering and Research Assistant with a focus on machine learning, computer vision—specifically for time-series forecasting, interpolation, diffusion, graph embedding, and clustering. I have experience in developing deep learning models, forecasting time series, creating data embeddings, clustering, and designing scalable systems. I am skilled in deploying solutions using Python, PyTorch, and cloud platforms, as well as building full-stack tools. I am passionate about improving AI research by combining strong algorithm design with practical applications in complex data areas.",
+    "summary": "PhD Researcher in AI/Machine Learning with a solid foundation in deep learning for large-scale time series and multimodal biomedical data, including genomic domain. Strong expertise in the development of AI systems employing self-supervised learning, transformers, and diffusion models for prediction, interpolation, and representation learning on large-scale datasets. Proven expertise in the design of scalable and robust AI systems via the effective use of Python and cloud-based platforms for the deployment of AI systems with a strong research publication portfolio and passion for the translation of research to real-world applications in healthcare domains.",
     "location": {
-      "address": "7830 Ultra Dr",
-      "postalCode": "CO 80920",
-      "city": "Colorado Springs",
+      "address": "3940 N Elm St, Room F296 (UNT Discovery Park)",
+      "postalCode": "76207",
+      "city": "Denton",
       "countryCode": "US",
-      "region": "Colorado"
+      "region": "Texas"
     },
     "profiles": [
       {
@@ -78,6 +78,13 @@
     }
   ],
   "publications": [
+    {
+      "name": "HiCInterpolate: 4D Spatiotemporal Interpolation of Hi-C Data for Genome Architecture Analysis",
+      "publisher": "bioRxiv",
+      "releaseDate": "2026-02-09",
+      "url": "https://www.biorxiv.org/content/early/2026/02/09/2026.02.06.704438",
+      "summary": ""
+    },
     {
       "name": "Robin: An Advanced Tool for Comparative Loop Caller Result Analysis Leveraging Large Language Models",
       "publisher": "NAR Genomics and Bioinformatics",
@@ -225,14 +232,15 @@
       "endDate": "Present",
       "summary": "",
       "highlights": [
-        "Researching the development of novel algorithms in computer vision—specifically for time-series forecasting, interpolation, diffusion, graph embeddings, and clustering, to study 3D genome organization using Hi-C data, with a focus on chromatin loop prediction, TAD detection, and Hi-C data prediction.",
-        "Developed a CNN-based deep learning model to predict splice sites in DNA sequences.",
-        "Designed computer vision models to predict Hi-C contact maps for time-series analysis.",
-        "Built computational models for TAD detection, including a graph-based framework with network embeddings and clustering.",
-        "Conducted a study comparing chromatin loop detection methods to assess existing approaches.",
-        "Built a web server for genomic analysis tools using Flask, HTML, CSS, JavaScript, and Docker to improve accessibility.",
-        "Collaborated on projects, providing data support, research help, and assistance with server management.",
-        "Reviewed manuscripts and co-authored publications in computational genomics and machine learning."
+        "Developed advanced AI and ML algorithms for large scale, high-dimensional biological time-series data, with a focus on spatiotemporal modeling of 3D genome organization using Hi-C data.",
+        "Developed deep learning models for time series forecasting, interpolation of Hi-C contact maps to predict missing and future interaction states based on the available data.",
+        "Developed computer vision-inspired architectures for modeling spatiotemporal contact matrices, aiding the subsequent analysis of chromatin dynamics.",
+        "Proposed and implemented a graph-based unsupervised learning framework on Topologically Associating Domain (TAD) detection based on network embeddings and clustering techniques.",
+        "Developing and training CNN-based deep learning models for the detection of biological signals, including the prediction of splice sites from genomic data.",
+        "Performed large-scale comparative benchmarking of chromatin loop detection algorithms in terms of robustness, accuracy, and scalability.",
+        "Created and delivered web-based AI tools for genomic data analysis utilizing Python, Flask, Docker, and Cloud Technology, which improved accessibility to such tools for domain experts.",
+        "Worked in a collaborative research environment where contributions were made to data engineering, model validation, experimental design, and maintenance.",
+        "Co-authored a number of peer-reviewed publications and was a manuscript reviewer for the top journals and conferences in AI and computational biology."
       ]
     },
     {
@@ -243,11 +251,11 @@
       "endDate": "2022-08-15",
       "summary": "",
       "highlights": [
-        "Designed and built AWS infrastructure for the Enterprise Service Bus (ESB) using Terraform. This setup allowed for automated and repeatable deployments.",
-        "Fixed critical bugs and improved ESB performance by redesigning components in Java (Micronaut) and PostgreSQL.",
-        "Developed and deployed CI/CD pipelines with Jenkins to improve release reliability.",
-        "Worked closely with business analysts and engineering teams to adjust system requirements and successfully integrate their applications with the ESB.",
-        "I helped with knowledge sharing and documentation to support long-term scalability and maintainability."
+        "Designed and implemented a highly scalable AWS-based infrastructure for ESB using Terraform, thus allowing for automated and reproducible deployments.",
+        "Perform performance and reliability enhancements by refactoring core services with the use of Java and PostgreSQL.",
+        "Implement and maintain CI/CD pipelines using Jenkins to make the release process more stable and guarantee efficient deployment.",
+        "Worked with business analysts and engineering teams to solidify requirements and integrate enterprise applications through the ESB.",
+        "Provided technical documentation and supported the knowledge transfer to guarantee scalability and maintainability of the system for a longer period."
       ]
     },
     {
@@ -258,11 +266,11 @@
       "endDate": "2022-01-14",
       "summary": "",
       "highlights": [
-        "Designed and developed the Volmet system with C#, .NET Web API, and MSSQL.",
-        "Deployed the entire system on the IIS Web Server for production use.",
-        "Built Windows services to support the Volmet system, using a microservices-inspired architecture to improve reliability.",
-        "Helped the frontend team by contributing to development and integration with AngularJS.",
-        "Worked with the business analyst and automation team to simplify requirements and expand the development process."
+        "Design and development of an efficient system using C#, .NET Web API, and MSSQL to support core business operations.",
+        "Deployed and maintained the system on IIS for live production usage.",
+        "Developed Windows services utilizing a microservices architecture design, leading to improved system reliability and fault tolerance.",
+        "Worked with the front end teams to assist in integration with AngularJS.",
+        "Worked closely with BA and automation teams to streamline the process and development flow."
       ]
     },
     {
@@ -273,10 +281,10 @@
       "endDate": "2020-04-30",
       "summary": "",
       "highlights": [
-        "Developed and integrated new features while updating existing ones to meet changing business needs using Java, Spring, MySQL, and Docker.",
-        "Fixed bugs and improved platform stability to enhance user experience.",
-        "Refactored old raw SQL queries into JPA and Querydsl, which simplified the code and made it easier to maintain.",
-        "Worked with team members to ensure scalability and a smooth transition to new processes."
+        "Utilized Java, Spring, MySQL, and Docker to enrich backend services for accommodating dynamic business needs.",
+        "Improved platform stability and performance through systematic bug fixes and refactoring.",
+        "Refactored old SQL queries in JPA and Querydsl, enhancing code maintainability and programmer productivity.",
+        "Collaborated with cross-functional groups in support of scalable system evolution and process improvements."
       ]
     },
     {
@@ -287,10 +295,9 @@
       "endDate": "2019-07-31",
       "summary": "",
       "highlights": [
-        "Designed and developed two e-commerce platforms using Java, Spring Boot, MySQL, SAPUI5, and JavaScript.",
-        "Built a comprehensive directory for doctor and hospital information, using Node.js, Vue.js, and PostgreSQL.",
-        "Focused on responsive design, scalability, and seamless integration between frontend and backend components.",
-        "Worked with different teams to clarify requirements and deliver ready-to-use applications."
+        "Developed two e-commerce platforms using Java, Spring Boot, MySQL, SAPUI5, and JavaScript, and successfully designed and implemented both",
+        "Created a directory-based platform in the realms of healthcare focused on doctors and hospitals, utilizing Node.js, Vue.js, and PostgreSQL.",
+        "Focused on responsive design, backend scalability, and seamless frontend-backend integration."
       ]
     }
   ],
