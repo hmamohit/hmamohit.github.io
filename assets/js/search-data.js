@@ -51,6 +51,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-titled-robin-an-advanced-tool-for-comparative-loop-caller-analysis-leveraging-large-language-models-has-been-published-at-nar-genomics-and-bioinformatics-open-access-https-doi-org-10-1093-nargab-lqag009",
           title: 'Our paper titled “Robin: An Advanced Tool for Comparative Loop Caller Analysis Leveraging...',
           description: "",
+          section: "News",},{id: "news-we-published-a-preprint-hicinterpolate-4d-spatiotemporal-interpolation-of-hi-c-data-for-genome-architecture-analysis-at-https-doi-org-10-64898-2026-02-06-704438",
+          title: 'We published a preprint “HiCInterpolate: 4D Spatiotemporal Interpolation of Hi-C Data for Genome...',
+          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
