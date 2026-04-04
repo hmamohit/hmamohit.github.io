@@ -1,3 +1,6 @@
 $(function () {
-  $('[data-toggle="tooltip"]').tooltip();
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  tooltipTriggerList.forEach((el) => {
+    bootstrap.Tooltip.getOrCreateInstance(el);
+  });
 });

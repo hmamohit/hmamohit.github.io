@@ -26,7 +26,7 @@ $(document).ready(function () {
     var navSelector = "#toc-sidebar";
     var $myNav = $(navSelector);
     Toc.init($myNav);
-    $("body").scrollspy({
+    bootstrap.ScrollSpy.getOrCreateInstance(document.body, {
       target: navSelector,
     });
   }
@@ -53,7 +53,9 @@ $(document).ready(function () {
   });
 
   // trigger popovers
-  $('[data-toggle="popover"]').popover({
-    trigger: "hover",
+  document.querySelectorAll('[data-bs-toggle="popover"]').forEach((el) => {
+    bootstrap.Popover.getOrCreateInstance(el, {
+      trigger: "hover",
+    });
   });
 });

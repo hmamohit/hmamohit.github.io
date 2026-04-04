@@ -183,6 +183,35 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Legacy depth utilities used across templates.
+.z-depth-0 {
+  box-shadow: none !important;
+}
+
+.z-depth-1 {
+  box-shadow: 0 0.2rem 0.75rem rgba(0, 0, 0, 0.12) !important;
+}
+
+// Compatibility aliases for templates that still use Bootstrap 4 utility names.
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+
+.font-weight-light,
+.font-weight-lighter {
+  font-weight: 300 !important;
+}
+
+.ml-1 {
+  margin-left: 0.25rem !important;
+}
+
+@media (min-width: 768px) {
+  .ml-md-4 {
+    margin-left: 1.5rem !important;
+  }
+}
+
 // Citation
 
 .citation,
