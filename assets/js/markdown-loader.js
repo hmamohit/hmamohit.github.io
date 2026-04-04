@@ -466,6 +466,12 @@ function renderPublications(main, markdown, bibEntries) {
         return (a.title || "").localeCompare(b.title || "");
       })
       .map(formatBibEntryHtml);
+
+    if (!list.length) {
+      list = [
+        "Publication data could not be loaded from the bibliography file."
+      ];
+    }
   } else {
     list = resolveCitations(tokens, bibMap);
   }
@@ -589,8 +595,23 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 
     var markdown = await response.text();
-    var bibResponse = await fetch("_bibliography/papers.bib", { cache: "no-cache" });
-    var bibText = bibResponse.ok ? await bibResponse.text() : "";
+
+    async function loadBibText() {
+      var bibPaths = ["_bibliography/papers.bib", "assets/content/papers.bib"];
+      for (var p = 0; p < bibPaths.length; p++) {
+        try {
+          var res = await fetch(bibPaths[p], { cache: "no-cache" });
+          if (res.ok) {
+            return await res.text();
+          }
+        } catch (err) {
+          // Keep trying fallback bibliography paths.
+        }
+      }
+      return "";
+    }
+
+    var bibText = await loadBibText();
     var bibEntries = parseBibtexEntries(bibText);
     if (source.endsWith("index.md")) {
       renderHome(main, markdown, bibEntries);
