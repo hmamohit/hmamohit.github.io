@@ -74,19 +74,48 @@ h6 {
   border-radius: 0.8rem;
 }
 
+.hero .row {
+  align-items: stretch !important;
+}
+
+.hero .row > .col-md-4 {
+  display: flex;
+  align-self: stretch;
+}
+
 .profile-card {
   background: #ffffff;
   border: 1px solid #e5edf7;
   border-radius: 0.9rem;
   padding: 0.6rem;
   box-shadow: 0 12px 24px rgba(21, 48, 79, 0.08);
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  flex: 1;
+  height: 100%;
 }
 
 .profile-photo {
+  display: block;
   width: 100%;
-  max-height: 460px;
+  height: 100%;
   object-fit: cover;
   object-position: center top;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .profile-photo {
+    height: 100%;
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-photo {
+    height: auto;
+    transform: none;
+  }
 }
 
 .intro-meta-card p {

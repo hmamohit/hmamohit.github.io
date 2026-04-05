@@ -27,7 +27,7 @@ GitHub Pages will publish the static files directly.
 - Resume page + PDF download: `resume.htm` and `assets/content/resume.md`
 - Visual styles: `assets/css/site.css`
 - Profile image: `assets/img/about.jpg`
-- Publication source data: `_bibliography/papers.bib`
+- Publication source data: `assets/bibliography/papers.bib`
 - Repository source data: `assets/content/repositories.md`
 - Resume source data: `assets/content/resume.md`
 
