@@ -211,6 +211,83 @@ function parseParagraphs(text) {
     });
 }
 
+function formatNewsDateTime(date) {
+  var year = date.getFullYear();
+  var month = String(date.getMonth() + 1).padStart(2, "0");
+  var day = String(date.getDate()).padStart(2, "0");
+  var hours = String(date.getHours()).padStart(2, "0");
+  var minutes = String(date.getMinutes()).padStart(2, "0");
+  return year + "-" + month + "-" + day + " " + hours + ":" + minutes;
+}
+
+function parseNewsDateTimeLabel(label) {
+  var m = (label || "").trim().match(/^(\d{4})[\/-](\d{2})[\/-](\d{2})(?:\s+(\d{2}):(\d{2}))?$/);
+  if (!m) return NaN;
+
+  var year = parseInt(m[1], 10);
+  var month = parseInt(m[2], 10);
+  var day = parseInt(m[3], 10);
+  var hours = parseInt(m[4] || "0", 10);
+  var minutes = parseInt(m[5] || "0", 10);
+
+  return new Date(year, month - 1, day, hours, minutes, 0, 0).getTime();
+}
+
+function parseNewsEntry(item, index) {
+  var m = item.match(/^\*\*(.+?)(?::)?\*\*\s*:?\s*(.+)$/);
+  if (!m) {
+    m = item.match(/^([0-9]{4}[\/-][0-9]{2}[\/-][0-9]{2}(?:\s+[0-9]{2}:[0-9]{2})?)\s*:\s*(.+)$/);
+  }
+
+  if (m) {
+    var dateLabel = m[1].trim();
+    return {
+      dateLabel: dateLabel,
+      body: m[2],
+      sortValue: parseNewsDateTimeLabel(dateLabel),
+      sourceIndex: index
+    };
+  }
+
+  return {
+    dateLabel: formatNewsDateTime(new Date()),
+    body: item,
+    sortValue: NaN,
+    sourceIndex: index
+  };
+}
+
+function sortNewsEntries(entries) {
+  return entries.slice().sort(function (a, b) {
+    var aHasDate = !Number.isNaN(a.sortValue);
+    var bHasDate = !Number.isNaN(b.sortValue);
+
+    if (aHasDate && bHasDate && a.sortValue !== b.sortValue) {
+      return b.sortValue - a.sortValue;
+    }
+    if (aHasDate && !bHasDate) return -1;
+    if (!aHasDate && bHasDate) return 1;
+    return a.sourceIndex - b.sourceIndex;
+  });
+}
+
+function renderNewsItem(entry) {
+  return '<li><span class="news-date">' + parseInline(entry.dateLabel) + '</span><span>' + parseInline(entry.body) + "</span></li>";
+}
+
+function extractNewsItemsFromMarkdown(markdown) {
+  if (!markdown) return [];
+
+  var parsed = splitSections(markdown);
+  var sectionItems = parseList(parsed.sections.News || "", false);
+  if (sectionItems.length) return sectionItems;
+
+  var introItems = parseList(parsed.intro || "", false);
+  if (introItems.length) return introItems;
+
+  return parseList(markdown, false);
+}
+
 function parseSubsections(text) {
   var lines = text.split("\n");
   var sections = [];
@@ -401,7 +478,7 @@ function renderStructuredPage(main, html) {
   main.innerHTML = out.join("\n");
 }
 
-function renderHome(main, markdown, bibEntries) {
+function renderHome(main, markdown, bibEntries, newsItems) {
   var bibMap = {};
   bibEntries.forEach(function (e) { bibMap[e.key] = e; });
   var parsed = splitSections(markdown);
@@ -416,15 +493,18 @@ function renderHome(main, markdown, bibEntries) {
   var profileImage = (parsed.sections["Profile Image"] || "").trim() || "assets/img/about.jpg";
   var publicationItems = parseList(parsed.sections["Selected Publications"] || "", true);
   var publications = resolveCitations(publicationItems, bibMap);
-  var news = parseList(parsed.sections.News || "", false);
-
-  var newsHtml = news.map(function (item) {
-    var m = item.match(/^\*\*(.+?)\*\*:\s*(.+)$/);
-    if (m) {
-      return '<li><span class="news-date">' + parseInline(m[1]) + '</span><span>' + parseInline(m[2]) + "</span></li>";
-    }
-    return '<li><span class="news-date">Update</span><span>' + parseInline(item) + "</span></li>";
-  }).join("\n");
+  var news = Array.isArray(newsItems) && newsItems.length
+    ? newsItems
+    : parseList(parsed.sections.News || "", false);
+  var sortedNews = sortNewsEntries(news.map(function (item, index) {
+    return parseNewsEntry(item, index);
+  }));
+  var visibleNews = sortedNews.slice(0, 5);
+  var hasMoreNews = sortedNews.length > visibleNews.length;
+  var newsHtml = visibleNews.map(renderNewsItem).join("\n");
+  var moreNewsHtml = hasMoreNews
+    ? '<div class="mt-3 text-end"><a class="btn btn-outline-primary btn-sm" href="news.html">View all news</a></div>'
+    : "";
 
   var connectHtml = "";
   var emailHtml = "";
@@ -479,8 +559,8 @@ function renderHome(main, markdown, bibEntries) {
     '</div><div class="col-md-4">',
     '<div class="profile-card"><img src="' + profileImage + '" class="img-fluid rounded-3 profile-photo" alt="H. M. A. Mohit Chowdhury portrait"></div>',
     "</div></div></div></section>",
-    '<section id="publications" class="section py-5"><div class="container"><h2 class="section-title mb-4">Selected Publications</h2><div class="soft-box p-3 p-md-4"><ol class="publication-list mb-0">' + publications.map(function (p) { return "<li>" + p + "</li>"; }).join("") + "</ol></div></div></section>",
-    '<section id="news" class="section section-alt py-5"><div class="container"><h2 class="section-title mb-4">News</h2><div class="soft-box p-3 p-md-4 news-box"><ul class="list-unstyled mb-0 news-list">' + newsHtml + "</ul></div></div></section>",
+    '<section id="publications" class="section py-5"><div class="container"><h2 class="section-title mb-4">Selected Publications</h2><div class="soft-box p-3 p-md-4"><ol class="publication-list mb-0">' + publications.map(function (p) { return "<li>" + p + "</li>"; }).join("") + '</ol><div class="mt-3 text-end"><a class="btn btn-outline-primary btn-sm" href="publications.html">View all publications</a></div></div></div></section>',
+    '<section id="news" class="section section-alt py-5"><div class="container"><h2 class="section-title mb-4">News</h2><div class="soft-box p-3 p-md-4 news-box"><ul class="list-unstyled mb-0 news-list">' + newsHtml + '</ul>' + moreNewsHtml + "</div></div></section>",
     '<section class="section py-5"><div class="container"><div class="row g-4 g-lg-5">',
     '<div class="col-lg-4">',
     '<div class="soft-box p-3 p-md-4">',
@@ -553,6 +633,22 @@ function renderRepositories(main, markdown) {
   main.innerHTML = '<section class="page-hero py-4"><div class="container"><h1 class="mb-0">' + parseInline(parsed.title || "Repositories") + '</h1></div></section>' +
     '<section class="section py-5"><div class="container"><div class="soft-box p-3 p-md-4 mb-4"><h2 class="h5 mb-3">GitHub Profiles</h2><div class="d-flex flex-wrap gap-2">' +
     profileButtons + '</div></div><h2 class="section-title mb-4">Featured Repositories</h2><div class="row g-4">' + cards + "</div></div></section>";
+}
+
+function renderNewsArchive(main, markdown) {
+  var allNews = sortNewsEntries(extractNewsItemsFromMarkdown(markdown).map(function (item, index) {
+    return parseNewsEntry(item, index);
+  }));
+
+  var archiveBody = "";
+  if (!allNews.length) {
+    archiveBody = '<p class="mb-0">No news entries yet.</p>';
+  } else {
+    archiveBody = '<ul class="list-unstyled mb-0 news-list">' + allNews.map(renderNewsItem).join("\n") + "</ul>";
+  }
+
+  main.innerHTML = '<section class="page-hero py-4"><div class="container d-flex flex-wrap justify-content-between align-items-center gap-2"><h1 class="mb-0">News</h1><a class="btn btn-outline-primary btn-sm" href="index.html#news">Back to Home</a></div></section>' +
+    '<section class="section py-5"><div class="container"><div class="soft-box p-3 p-md-4">' + archiveBody + "</div></div></section>";
 }
 
 function renderResume(main, markdown, bibEntries) {
@@ -640,6 +736,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   if (!main) return;
 
   var source = main.getAttribute("data-md");
+  var view = main.getAttribute("data-view") || "";
   if (!source) return;
 
   try {
@@ -665,10 +762,29 @@ document.addEventListener("DOMContentLoaded", async function () {
       return "";
     }
 
+    async function loadNewsText() {
+      try {
+        var res = await fetch("assets/content/news.md", { cache: "no-cache" });
+        if (res.ok) {
+          return await res.text();
+        }
+      } catch (err) {
+        // Fall back to index markdown news content if this file is unavailable.
+      }
+      return "";
+    }
+
     var bibText = await loadBibText();
     var bibEntries = parseBibtexEntries(bibText);
+    if (view === "news" || view === "news-archive") {
+      renderNewsArchive(main, markdown);
+      return;
+    }
+
     if (source.endsWith("index.md")) {
-      renderHome(main, markdown, bibEntries);
+      var newsText = await loadNewsText();
+      var newsItems = extractNewsItemsFromMarkdown(newsText);
+      renderHome(main, markdown, bibEntries, newsItems);
       return;
     }
 

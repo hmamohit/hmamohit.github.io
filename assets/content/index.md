@@ -43,12 +43,3 @@ F296, UNT Discovery Park
 2. [@Chowdhury2025]
 3. [@10.1093/bioinformatics/btaf030]
 4. [@Chowdhury2024]
-
-
-## News
-
-- **2026-01-04:** Our paper "EmbedTAD Using Graph Embedding and Unsupervised Learning to Identify TADs from High-Resolution Hi-C Data" has been published in [Communications Biology](https://www.nature.com/commsbio/). Open access: [DOI](https://doi.org/10.1038/s42003-025-09224-z).
-- **2025-11-11:** Our paper "EmbedTAD Using Graph Embedding and Unsupervised Learning to Identify TADs from High-Resolution Hi-C Data" has been accepted in [Communications Biology](https://www.nature.com/commsbio/).
-- **2025-11-06:** We submitted "EmbedTAD: Using Graph Embedding and Unsupervised Learning to Identify TADs from High-Resolution Hi-C Data" to [Communications Biology](https://www.nature.com/commsbio/).
-- **2025-10-01:** We submitted "Robin: An Advanced Tool for Comparative Loop Caller Analysis Leveraging Large Language Models" to [NAR Genomics and Bioinformatics](https://academic.oup.com/nargab).
-- **2025-08-15:** I started my PhD in Computer Science and Engineering at the [University of North Texas](https://www.unt.edu/).
