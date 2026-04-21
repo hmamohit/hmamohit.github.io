@@ -1,6 +1,6 @@
 # H. M. A. Mohit Chowdhury
 
-PhD Student in Computer Science and Graduate Research Assistant, University of North Texas.
+PhD candidate in Computer Science and Engineering department and Graduate Research Assistant at the University of North Texas.
 
 ## Profile Image
 
@@ -8,11 +8,11 @@ assets/img/about.jpg
 
 ## About
 
-I am H. M. A. Mohit Chowdhury, a Ph.D. student in Computer Science and Engineering at the [University of North Texas (UNT)](https://www.unt.edu/) and a Graduate Research Assistant at [Oluwadare Lab](https://oluwadarelab.com/).
+I am H. M. A. Mohit Chowdhury, a Ph.D. candidate in Computer Science and Engineering department at the [University of North Texas (UNT)](https://www.unt.edu/) and a Graduate Research Assistant at [Oluwadare Lab](https://oluwadarelab.com/).
 
 My work focuses on deep learning, computer vision, and computational genomics, with emphasis on high-resolution genomic data analysis. I develop methods for time-series forecasting, interpolation, diffusion-based modeling, and graph-driven learning workflows for biological applications.
 
-My research objective is to build robust algorithms for understanding 3D genome organization using Hi-C data, particularly for chromatin loop prediction and Topologically Associating Domain (TAD) identification. I combine deep learning, graph embeddings, and clustering methods to deliver biologically meaningful, reproducible results.
+My research objective is to build robust algorithms for understanding 3D genome organization using Hi-C data, particularly for chromatin loop prediction and Topologically Associating Domain (TAD) identification. I combine deep learning, computer vision, graph embeddings, and clustering methods to deliver biologically meaningful, reproducible results.
 
 ## Research Interests
 

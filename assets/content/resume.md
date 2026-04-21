@@ -20,6 +20,7 @@ PhD Researcher in AI/Machine Learning with a solid foundation in deep learning f
 ## Education
 
 - **Ph.D. in Computer Science and Engineering**, University of North Texas, Denton, TX (2025 - 2027 expected); Transferred from University of Colorado Colorado Springs (2022 - 2025)
+- **Dissertation Title: *Deep Learning Algorithms for Multiscale 3D Genome Organization Analysis*
 - **M.Sc. in Computer Science**, University of Colorado Colorado Springs, CO (2024), GPA: 3.867
 - **B.Sc. in Computer Science and Engineering**, Ahsanullah University of Science and Technology, Dhaka, Bangladesh (2017), GPA: 3.71
 
