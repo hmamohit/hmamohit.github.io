@@ -543,10 +543,11 @@ function renderHome(main, markdown, bibEntries, newsItems) {
 
   main.innerHTML = [
     '<section id="about" class="section py-5 hero">',
-    '<div class="container"><div class="row g-4 g-md-5 align-items-center">',
-    '<div class="col-md-8">',
-    '<h1 class="display-5 mb-2">' + parseInline(parsed.title || "Home") + "</h1>",
+    '<div class="container">',
+    '<div class="d-flex flex-wrap align-items-center gap-2 mb-3"><h1 class="display-5 mb-0">' + parseInline(parsed.title || "Home") + '</h1><a class="btn btn-outline-primary btn-sm" href="assets/pdf/chowdhury_resume.pdf" target="_blank" rel="noopener" download>Resume PDF</a></div>',
     lead ? '<p class="lead mb-4">' + parseInline(lead) + "</p>" : "",
+    '<div class="row g-4 g-md-5 align-items-center">',
+    '<div class="col-md-8 order-2 order-md-1">',
     aboutParas.map(function (p, i) {
       var cls = i === aboutParas.length - 1 ? ' class="mb-0"' : "";
       return "<p" + cls + ">" + parseInline(p) + "</p>";
@@ -556,7 +557,7 @@ function renderHome(main, markdown, bibEntries, newsItems) {
     '<h2 class="h6 text-uppercase letter mb-3">Research Interests</h2>',
     '<div class="d-flex flex-wrap gap-2">' + interests.map(function (it) { return '<span class="interest-chip">' + parseInline(it) + "</span>"; }).join("") + "</div>",
     "</div>",
-    '</div><div class="col-md-4">',
+    '</div><div class="col-md-4 order-1 order-md-2">',
     '<div class="profile-card"><img src="' + profileImage + '" class="img-fluid rounded-3 profile-photo" alt="H. M. A. Mohit Chowdhury portrait"></div>',
     "</div></div></div></section>",
     '<section id="publications" class="section py-5"><div class="container"><h2 class="section-title mb-4">Selected Publications</h2><div class="soft-box p-3 p-md-4"><ol class="publication-list mb-0">' + publications.map(function (p) { return "<li>" + p + "</li>"; }).join("") + '</ol><div class="mt-3 text-end"><a class="btn btn-outline-primary btn-sm" href="publications.html">View all publications</a></div></div></div></section>',

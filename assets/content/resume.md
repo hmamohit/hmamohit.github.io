@@ -62,6 +62,7 @@ I do research in the intersection of Deep Learning and Genomics, with a focus on
 
 ## Awards and Certificates
 
+- MCBIOS 2026 Travel Award
 - CENG Anticipated Award (2025) - University of North Texas
 - Graduate School Travel Award (2024) - University of Colorado Colorado Springs
 - Tuition Matching Grant Award (2022-2024) - University of Colorado Colorado Springs
@@ -70,10 +71,10 @@ I do research in the intersection of Deep Learning and Genomics, with a focus on
 
 ## Leadership and Activities
 
+- Participant, Open House 2025 at UCCS
 - President, Bangladeshi Student Association (BSA) 2024-2025 at UCCS
+- Participant, Cool Science Festival 2022, 2023, 2024 at UCCS
 - Session Chair, NSF REU Summer Research 2023 at UCCS
 - Technical Assistant, NSF REU Summer Research 2023 at UCCS
 - Conducted a basic Linux and Docker hands-on class in NSF REU Summer Research 2023 at UCCS
-- Participant, Cool Science Festival 2022, 2023, 2024 at UCCS
-- Participant, Open House 2025 at UCCS
 - Organized Cumilla Victoria Govt. College Reunion 2016
