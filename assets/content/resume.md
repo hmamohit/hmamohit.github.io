@@ -30,7 +30,7 @@ I do research in the intersection of Deep Learning and Genomics, with a focus on
 
 ## Professional Service
 
-- Reviewer: *Scientific Reports* (Nature Portfolio), *BMC Bioinformatics* (BMC), *Computational and Structural Biotechnology Journal* (CSBJ), *Genome Biology* (BMC), *BioData Mining* (BMC), *IEEE International Conference on Bioinformatics and Biomedicine* (BIBM), *Analytical Letters* (Taylor \& Francis).
+- Reviewer: *Scientific Reports* (Nature Portfolio), *BMC Bioinformatics* (BMC), *Computational and Structural Biotechnology Journal* (CSBJ), *Genome Biology* (BMC), *BioData Mining* (BMC), *IEEE International Conference on Bioinformatics and Biomedicine* (BIBM), *Analytical Letters* (Taylor & Francis).
 - Mentor: UR2PHD Program, University of North Texas (Fall 2025 - Spring 2026)
 
 ## Technical Skills
