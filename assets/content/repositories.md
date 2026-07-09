@@ -3,7 +3,7 @@
 ## GitHub Profiles
 
 - [hmamohit](https://github.com/hmamohit)
-- [OluwadareLab](https://github.com/OluwadareLab)
+- [CompBio-AI Lab](https://github.com/OluwadareLab)
 
 ## Featured Repositories
 

@@ -6,7 +6,7 @@
 
 ## Professional Overview
 
-PhD Researcher in AI/Machine Learning with a solid foundation in deep learning for large-scale time series and multimodal biomedical data, including genomic domain. Strong expertise in the development of AI systems employing self-supervised learning, transformers, and diffusion models for prediction, interpolation, and representation learning on large-scale datasets. Proven expertise in the design of scalable and robust AI systems via the effective use of Python and cloud-based platforms for the deployment of AI systems with a strong research publication portfolio and passion for the translation of research to real-world applications in healthcare domains.
+I do research in the intersection of Deep Learning and Genomics, with a focus on large-scale time-series DNA-seq data. My research bridges the gap between complex biological sequences and state-of-the-art AI, utilizing Self-Supervised Learning, Computer Vision, Transformers, and Diffusion models for high-fidelity forecasting and representation learning. Beyond the bench, I am a builder—designing scalable, cloud-native AI systems in Python to translate high-impact research into robust healthcare applications.
 
 ## General Information
 
@@ -30,14 +30,22 @@ PhD Researcher in AI/Machine Learning with a solid foundation in deep learning f
 
 ## Professional Service
 
-- Reviewer, *Scientific Reports* (Nature Portfolio)
-- Reviewer, *BioData Mining* (BMC)
-- Reviewer, IEEE International Conference on Bioinformatics and Biomedicine (BIBM)
-- Mentor, UR2PhD Program, University of North Texas (Fall 2025 - Spring 2026)
+- Reviewer: *Scientific Reports* (Nature Portfolio), *BMC Bioinformatics* (BMC), *Computational and Structural Biotechnology Journal* (CSBJ), *Genome Biology* (BMC), *BioData Mining* (BMC), *IEEE International Conference on Bioinformatics and Biomedicine* (BIBM), *Analytical Letters* (Taylor \& Francis).
+- Mentor: UR2PHD Program, University of North Texas (Fall 2025 - Spring 2026)
 
-## Professional Experience
+## Technical Skills
 
-### Graduate Research Assistant - Oluwadare Lab, University of North Texas (2022 - Present)
+- **AI / ML:** Deep Learning, Time-Series, Spatiotemporal Modeling, Transformer Architecture, Diffusion Architecture, CNNs, Graph Representation, Clustering
+- **Programming Languages:** Python, Java, C#, C, JavaScript
+- **ML and Data Frameworks:** PyTorch, RAPIDS (cuML, cuDF, etc.), scikit-learn
+- **Software Frameworks:** Spring, .NET, Flask
+- **Cloud and Deployment:** AWS (EC2, S3, etc), Docker, Terraform, Git
+- **Databases:** MySQL, MSSQL, PostgreSQL
+- **Operating Systems:** Linux, macOS, Windows
+
+## Experience
+
+### Graduate Research Assistant - CompBio-AI Lab, University of North Texas (2022 - Present)
 - Developed advanced AI/ML and deep learning algorithms for genomic data, such as CNNs, graph embeddings, time series, and spatiotemporal models for Hi-C data analysis. Developed scalable data pipelines, algorithmic benchmarking, and deployed web-based tools with Python, Flask, and Docker.
 
 ### Solutions Developer - Otto International (2022 - 2022)
@@ -51,16 +59,6 @@ PhD Researcher in AI/Machine Learning with a solid foundation in deep learning f
 
 ### Software Engineer - Netweaver Software Limited (2017 - 2019)
 - Led the development of two e-commerce platforms with Java, Spring Boot, MySQL, SAP UI5, and JavaScript, and a healthcare directory platform with Node.js, Vue.js, and PostgreSQL, focusing on scalable backend development and integration with the frontend.
-
-## Technical Skills
-
-- **AI / ML:** Deep Learning, Transformer Architectures, CNNs, Graph Representation, Clustering, Time-Series, Spatiotemporal Modeling
-- **Programming Languages:** Python, Java, C#, C, JavaScript
-- **ML and Data Frameworks:** PyTorch, RAPIDS (cuML, cuDF, etc.), scikit-learn
-- **Software Frameworks:** Spring, .NET, Flask
-- **Cloud and Deployment:** AWS (EC2, S3, etc), Docker, Terraform, Git
-- **Databases:** MySQL, MSSQL, PostgreSQL
-- **Operating Systems:** Linux, macOS, Windows
 
 ## Awards and Certificates
 
