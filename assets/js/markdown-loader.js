@@ -693,7 +693,7 @@ function renderResume(main, markdown, bibEntries) {
         }
       }
 
-      if (name === "Scientific Research") {
+      if (name === "Peer-reviewed Journal Articles (08)") {
         var cites = parseList(sectionMd, true);
         var rendered = [];
         if (cites.length === 1 && cites[0].trim().toLowerCase() === "@all") {
