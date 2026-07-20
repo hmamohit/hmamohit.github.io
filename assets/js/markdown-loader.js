@@ -324,6 +324,49 @@ function splitRowsIntoBalancedColumns(rows) {
   return { left: left, right: right };
 }
 
+function renderEducationSection(sectionMd) {
+  var lines = sectionMd.replace(/\r\n/g, "\n").split("\n");
+  var items = [];
+  var current = null;
+
+  lines.forEach(function (raw) {
+    var line = raw.trim();
+    if (!line) return;
+
+    var topMatch = raw.match(/^\-\s+(.+)/);
+    var nestedMatch = raw.match(/^\s{4}\-\s+(.+)/);
+
+    if (topMatch) {
+      current = { title: topMatch[1].trim(), details: [] };
+      items.push(current);
+      return;
+    }
+
+    if (nestedMatch && current) {
+      current.details.push(nestedMatch[1].trim());
+      return;
+    }
+
+    if (current) {
+      current.details.push(line);
+    }
+  });
+
+  if (!items.length) {
+    return markdownToHtml(sectionMd).replace('<ol class="mb-0">', '<ol class="publication-list mb-0">');
+  }
+
+  return '<ul class="mb-0 ps-3">' + items.map(function (item) {
+    var details = item.details.length
+      ? '<ul class="mb-0 ps-3 mt-2">' + item.details.map(function (detail) {
+          return '<li>' + parseInline(detail) + '</li>';
+        }).join('') + '</ul>'
+      : '';
+
+    return '<li>' + parseInline(item.title) + details + '</li>';
+  }).join('') + '</ul>';
+}
+
 function markdownToHtml(md) {
   var lines = md.replace(/\r\n/g, "\n").split("\n");
   var html = [];
@@ -438,7 +481,10 @@ function markdownToHtml(md) {
     }
 
     if (!inP) {
-      html.push("<p>");
+      if (inP) {
+        html.push("</p>");
+        inP = false;
+      }
       inP = true;
       html.push(parseInline(line));
     } else {
@@ -736,7 +782,11 @@ function renderResume(main, markdown, bibEntries) {
       }
 
       if (!inner) {
-        inner = markdownToHtml(sectionMd).replace('<ol class="mb-0">', '<ol class="publication-list mb-0">');
+        if (name === "Education") {
+          inner = renderEducationSection(sectionMd);
+        } else {
+          inner = markdownToHtml(sectionMd).replace('<ol class="mb-0">', '<ol class="publication-list mb-0">');
+        }
       }
 
       var cls = idx === arr.length - 1 ? "" : " mb-4";

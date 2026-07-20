@@ -49,7 +49,7 @@ Computer Science PhD candidate with specialization in deep learning architecture
 
 ## Skills
 
-- **AI / ML:** Deep Learning, Time-Series, Spatiotemporal Modeling, Transformer Architecture, Diffusion Architecture, CNNs, Graph Representation, Clustering
+- **AI/ML:** Deep Learning, Time-Series, Spatiotemporal Modeling, Transformer Architecture, Diffusion Architecture, CNNs, Graph Representation, Clustering
 - **Programming Languages:** Python, Java, C#, C, JavaScript
 - **ML and Data Frameworks:** PyTorch, RAPIDS (cuML, cuDF, etc.), scikit-learn
 - **Software Frameworks:** Spring, .NET, Flask
@@ -59,7 +59,7 @@ Computer Science PhD candidate with specialization in deep learning architecture
 
 ## Experience (Total: 9 years; Research: 4 years + Industry: 5 years)
 
-### Graduate Research Assistant - CompBio-AI Lab, University of North Texas (2022 - Present)
+### Graduate Research Assistant - CompBio-AI Lab, UNT (Formally at UCCS) (2022 - Present)
 - Developed advanced AI/ML and deep learning algorithms for genomic data, such as CNNs, graph embeddings, time series, and spatiotemporal models for Hi-C data analysis. Developed scalable data pipelines, algorithmic benchmarking, and deployed web-based tools with Python, Flask, and Docker.
 
 ### Solutions Developer - Otto International (2022 - 2022)
