@@ -327,23 +327,40 @@ function splitRowsIntoBalancedColumns(rows) {
 function markdownToHtml(md) {
   var lines = md.replace(/\r\n/g, "\n").split("\n");
   var html = [];
-  var inUl = false;
-  var inOl = false;
   var inP = false;
+  var listStack = [];
 
   function closeListsAndParagraph() {
     if (inP) {
       html.push("</p>");
       inP = false;
     }
-    if (inUl) {
-      html.push("</ul>");
-      inUl = false;
+    while (listStack.length) {
+      var current = listStack.pop();
+      if (current.liOpen) {
+        html.push("</li>");
+      }
+      html.push("</" + current.type + ">");
     }
-    if (inOl) {
-      html.push("</ol>");
-      inOl = false;
+  }
+
+  function closeListsToIndent(indent) {
+    while (listStack.length && listStack[listStack.length - 1].indent > indent) {
+      var current = listStack.pop();
+      if (current.liOpen) {
+        html.push("</li>");
+      }
+      html.push("</" + current.type + ">");
     }
+  }
+
+  function openList(type, indent) {
+    html.push('<' + type + ' class="mb-0">');
+    listStack.push({ type: type, indent: indent, liOpen: false });
+  }
+
+  function currentList() {
+    return listStack[listStack.length - 1] || null;
   }
 
   lines.forEach(function (raw) {
@@ -357,8 +374,7 @@ function markdownToHtml(md) {
     var h1 = line.match(/^#\s+(.+)/);
     var h2 = line.match(/^##\s+(.+)/);
     var h3 = line.match(/^###\s+(.+)/);
-    var ul = line.match(/^[-*]\s+(.+)/);
-    var ol = line.match(/^\d+\.\s+(.+)/);
+    var listMatch = raw.match(/^(\s*)([-*]|\d+\.)\s+(.+)/);
 
     if (h1) {
       closeListsAndParagraph();
@@ -378,49 +394,50 @@ function markdownToHtml(md) {
       return;
     }
 
-    if (ul) {
+    if (listMatch) {
+      var indent = listMatch[1].length;
+      var type = /^\d+\.$/.test(listMatch[2]) ? "ol" : "ul";
+      var content = listMatch[3];
+
       if (inP) {
         html.push("</p>");
         inP = false;
       }
-      if (inOl) {
-        html.push("</ol>");
-        inOl = false;
+
+      closeListsToIndent(indent);
+
+      var current = currentList();
+      if (!current || current.indent < indent) {
+        openList(type, indent);
+        current = currentList();
+      } else if (current.indent === indent && current.type !== type) {
+        closeListsToIndent(indent - 1);
+        current = currentList();
+        openList(type, indent);
+        current = currentList();
       }
-      if (!inUl) {
-        html.push('<ul class="mb-0">');
-        inUl = true;
+
+      current = currentList();
+      if (!current) {
+        openList(type, indent);
+        current = currentList();
       }
-      html.push("<li>" + parseInline(ul[1]) + "</li>");
+
+      if (current.liOpen) {
+        html.push("</li>");
+        current.liOpen = false;
+      }
+
+      html.push("<li>" + parseInline(content));
+      current.liOpen = true;
       return;
     }
 
-    if (ol) {
-      if (inP) {
-        html.push("</p>");
-        inP = false;
-      }
-      if (inUl) {
-        html.push("</ul>");
-        inUl = false;
-      }
-      if (!inOl) {
-        html.push('<ol class="mb-0">');
-        inOl = true;
-      }
-      html.push("<li>" + parseInline(ol[1]) + "</li>");
-      return;
+    if (listStack.length) {
+      closeListsAndParagraph();
     }
 
     if (!inP) {
-      if (inUl) {
-        html.push("</ul>");
-        inUl = false;
-      }
-      if (inOl) {
-        html.push("</ol>");
-        inOl = false;
-      }
       html.push("<p>");
       inP = true;
       html.push(parseInline(line));
@@ -693,7 +710,7 @@ function renderResume(main, markdown, bibEntries) {
         }
       }
 
-      if (name === "Peer-reviewed Journal Articles (08)") {
+      if (/^Peer-reviewed Journal Articles\b/.test(name)) {
         var cites = parseList(sectionMd, true);
         var rendered = [];
         if (cites.length === 1 && cites[0].trim().toLowerCase() === "@all") {
