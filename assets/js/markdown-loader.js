@@ -607,7 +607,7 @@ function renderHome(main, markdown, bibEntries, newsItems) {
   main.innerHTML = [
     '<section id="about" class="section py-5 hero">',
     '<div class="container">',
-    '<div class="d-flex flex-wrap align-items-center gap-2 mb-3"><h1 class="display-5 mb-0">' + parseInline(parsed.title || "Home") + '</h1><a class="btn btn-outline-primary btn-sm" href="assets/pdf/chowdhury_resume.pdf" target="_blank" rel="noopener" download>Resume PDF</a></div>',
+    '<div class="d-flex flex-wrap align-items-center gap-2 mb-3"><h1 class="display-5 mb-0">' + parseInline(parsed.title || "Home") + '</h1><a class="btn btn-outline-primary btn-sm" href="assets/pdf/chowdhury_resume_web.pdf" target="_blank" rel="noopener" download>Resume PDF</a></div>',
     lead ? '<p class="lead mb-4">' + parseInline(lead) + "</p>" : "",
     '<div class="row g-4 g-md-5 align-items-center">',
     '<div class="col-md-8 order-2 order-md-1">',
@@ -720,7 +720,7 @@ function renderResume(main, markdown, bibEntries) {
   var bibMap = {};
   bibEntries.forEach(function (e) { bibMap[e.key] = e; });
   var downloadMatch = (parsed.sections.Download || "").match(/\[(.*?)\]\((.*?)\)/);
-  var downloadHref = downloadMatch ? downloadMatch[2] : "assets/pdf/chowdhury_resume.pdf";
+  var downloadHref = downloadMatch ? downloadMatch[2] : "assets/pdf/chowdhury_resume_web.pdf";
   var downloadLabel = downloadMatch ? downloadMatch[1] : "Download Resume";
 
   var body = parsed.sectionOrder
