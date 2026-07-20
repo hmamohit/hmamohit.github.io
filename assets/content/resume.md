@@ -2,11 +2,11 @@
 
 ## Download
 
-[PDF](assets/pdf/chowdhury_resume.pdf)
+[PDF](assets/pdf/chowdhury_resume_web.pdf)
 
 ## Professional Overview
 
-I do research in the intersection of Deep Learning and Genomics, with a focus on large-scale time-series DNA-seq data. My research bridges the gap between complex biological sequences and state-of-the-art AI, utilizing Self-Supervised Learning, Computer Vision, Transformers, and Diffusion models for high-fidelity forecasting and representation learning. Beyond the bench, I am a builder—designing scalable, cloud-native AI systems in Python to translate high-impact research into robust healthcare applications.
+Computer Science PhD candidate with specialization in deep learning architectures for genomics. Extensive experience in developing and scaling Self-Supervised Learning systems, Computer Vision models that work with large-scale and high-dimensional genomic time series data. Balances strong ML theory background with practical software engineering, using Python and cloud-native technologies to create scalable AI infrastructure for interpreting genomic sequences.
 
 ## General Information
 
@@ -19,21 +19,35 @@ I do research in the intersection of Deep Learning and Genomics, with a focus on
 
 ## Education
 
-- **Ph.D. in Computer Science and Engineering**, University of North Texas, Denton, TX (2025 - 2027 expected); Transferred from University of Colorado Colorado Springs (2022 - 2025)
-- **Dissertation Title: *Deep Learning Algorithms for Multiscale 3D Genome Organization Analysis*
-- **M.Sc. in Computer Science**, University of Colorado Colorado Springs, CO (2024), GPA: 3.867
-- **B.Sc. in Computer Science and Engineering**, Ahsanullah University of Science and Technology, Dhaka, Bangladesh (2017), GPA: 3.71
+- **Ph.D. in Computer Science and Engineering**, GPA 4.00
+    - University of North Texas, Denton, TX (2025 - 2027 expected)
+    - University of Colorado Colorado Springs (2022 - 2025) - Transferred to UNT in Fall 2025
+    - *Dissertation Title*: Deep Learning algorithms for multiscale 3D genome organization analysis.
+    - *Advisor*: Oluwatosin Oluwadare
 
-## Scientific Research
+- **M.Sc. in Computer Science**, GPA: 3.867
+    - University of Colorado Colorado Springs, CO (2024)
+- **B.Sc. in Computer Science and Engineering**, GPA: 3.71
+    - Ahsanullah University of Science and Technology, Dhaka, Bangladesh (2017)
+
+## Peer-reviewed Journal Articles (08)
 
 1. @all
 
-## Professional Service
+## Poster Presentation (05)
+- HiCInterpolate: 4D Spatiotemporal Interpolation of Hi-C Data for Genome Architecture Analysis. (*ISMB 2026*)
+- EmbedTAD Using Graph Embedding and Unsupervised Learning to Identify TADs from High-Resolution Hi-C Data. (*MCBIOS 2026 & Pikes Peak AI Summit 2025*)
+- Comparative study on chromatin loop callers using Hi-C data reveals their effectiveness. (*RECOMB 2024 & MLRD Research Day 2024*)
 
-- Reviewer: *Scientific Reports* (Nature Portfolio), *BMC Bioinformatics* (BMC), *Computational and Structural Biotechnology Journal* (CSBJ), *Genome Biology* (BMC), *BioData Mining* (BMC), *IEEE International Conference on Bioinformatics and Biomedicine* (BIBM), *Analytical Letters* (Taylor & Francis).
-- Mentor: UR2PHD Program, University of North Texas (Fall 2025 - Spring 2026)
+## Talk (02)
+- EmbedTAD Using Graph Embedding and Unsupervised Learning to Identify TADs from High-Resolution Hi-C Data. (*MCBIOS 2026 & Pikes Peak AI Summit 2025*)
 
-## Technical Skills
+## Professional Service (02)
+
+- **Peer Reviewer (07)**: i. *Scientific Reports* (Nature Portfolio), ii. *BMC Bioinformatics* (BMC), iii. *Computational and Structural Biotechnology Journal* (CSBJ), iv. *Genome Biology* (BMC), v. *BioData Mining* (BMC), vi. *IEEE International Conference on Bioinformatics and Biomedicine* (BIBM), vii. *Analytical Letters* (Taylor & Francis).
+- **Mentor (01)**: UR2PHD Program, University of North Texas (Fall 2025 - Spring 2026)
+
+## Skills
 
 - **AI / ML:** Deep Learning, Time-Series, Spatiotemporal Modeling, Transformer Architecture, Diffusion Architecture, CNNs, Graph Representation, Clustering
 - **Programming Languages:** Python, Java, C#, C, JavaScript
@@ -43,7 +57,7 @@ I do research in the intersection of Deep Learning and Genomics, with a focus on
 - **Databases:** MySQL, MSSQL, PostgreSQL
 - **Operating Systems:** Linux, macOS, Windows
 
-## Experience
+## Experience (Total: 9 years; Research: 4 years + Industry: 5 years)
 
 ### Graduate Research Assistant - CompBio-AI Lab, University of North Texas (2022 - Present)
 - Developed advanced AI/ML and deep learning algorithms for genomic data, such as CNNs, graph embeddings, time series, and spatiotemporal models for Hi-C data analysis. Developed scalable data pipelines, algorithmic benchmarking, and deployed web-based tools with Python, Flask, and Docker.
