@@ -2,9 +2,12 @@
 
 ## News
 
+- **2026-04-20 21:40:** Today, I successfully defended my PhD dissertation proposal in Computer Science and Engineering department at the [University of North Texas](https://www.unt.edu/). My dissertation title: *Deep Learning Algorithms for Multiscale 3D Genome Organization Analysis*.
+- **2026-02-09 10:00:** Our preprint "HiCInterpolate: 4D Spatiotemporal Interpolation of Hi-C Data for Genome Architecture Analysis" is now available on [bioRxiv](https://doi.org/10.64898/2026.02.06.704438).
+- **2026-01-20 14:00:** Our paper "Robin: An Advanced Tool for Comparative Loop Caller Result Analysis Leveraging Large Language Models" has been published in [NAR Genomics and Bioinformatics](https://academic.oup.com/nargab/). Open access: [DOI](https://doi.org/10.1093/nargab/lqag009).
+- **2026-01-10 11:00:** Received the MCBIOS 2026 Travel Award to present our research on EmbedTAD.
 - **2026-01-04 08:00:** Our paper "EmbedTAD Using Graph Embedding and Unsupervised Learning to Identify TADs from High-Resolution Hi-C Data" has been published in [Communications Biology](https://www.nature.com/commsbio/). Open access: [DOI](https://doi.org/10.1038/s42003-025-09224-z).
 - **2025-11-11 12:00:** Our paper "EmbedTAD Using Graph Embedding and Unsupervised Learning to Identify TADs from High-Resolution Hi-C Data" has been accepted in [Communications Biology](https://www.nature.com/commsbio/).
 - **2025-11-06 14:40:** We submitted "EmbedTAD: Using Graph Embedding and Unsupervised Learning to Identify TADs from High-Resolution Hi-C Data" to [Communications Biology](https://www.nature.com/commsbio/).
 - **2025-10-01 11:30:** We submitted "Robin: An Advanced Tool for Comparative Loop Caller Analysis Leveraging Large Language Models" to [NAR Genomics and Bioinformatics](https://academic.oup.com/nargab).
 - **2025-08-15 10:00:** I started my PhD in Computer Science and Engineering at the [University of North Texas](https://www.unt.edu/).
-- **2026-04-20 21:40:** Today, I successfully defended my PhD dissertation proposal in Computer Science and Engineering department at the[University of North Texas](https://www.unt.edu/). My dissertation title: *Deep Learning Algorithms for Multiscale 3D Genome Organization Analysis*

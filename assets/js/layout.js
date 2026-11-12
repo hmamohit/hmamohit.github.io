@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
     footerHost.innerHTML =
       '<footer class="py-4 border-top">' +
       '<div class="container d-flex flex-column flex-md-row justify-content-between gap-2">' +
-      '<p class="mb-0 small">&copy; 2026 H. M. A. Mohit Chowdhury</p>' +
-      '<p class="mb-0 small text-body-secondary">Built with GitHub Copilot &#129302;</p>' +
+      '<p class="mb-0 small">&copy; 2026 Chowdhury</p>' +
+      '<p class="mb-0 small text-body-secondary">Built with Ai</p>' +
       "</div>" +
       "</footer>";
   }

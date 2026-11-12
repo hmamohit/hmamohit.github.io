@@ -1,6 +1,6 @@
 # H. M. A. Mohit Chowdhury
 
-PhD candidate in Computer Science and Engineering department and Graduate Research Assistant at the University of North Texas.
+Ph.D. Candidate in Computer Science and Engineering and Graduate Research Assistant at the University of North Texas.
 
 ## Profile Image
 
@@ -8,25 +8,26 @@ assets/img/about.jpg
 
 ## About
 
-I am H. M. A. Mohit Chowdhury, a Ph.D. candidate in Computer Science and Engineering department at the [University of North Texas (UNT)](https://www.unt.edu/) and a Graduate Research Assistant at [CompBio-AI Lab](https://oluwadarelab.com/).
+I am H. M. A. Mohit Chowdhury, a Ph.D. candidate in the Department of Computer Science and Engineering at the [University of North Texas (UNT)](https://www.unt.edu/) and a Graduate Research Assistant at the [CompBio-AI Lab](https://oluwadarelab.com/), working under the advisement of Dr. Oluwatosin Oluwadare.
 
-My work focuses on deep learning, computer vision, and computational genomics, with emphasis on high-resolution genomic data analysis. I develop methods for time-series forecasting, interpolation, diffusion-based modeling, and graph-driven learning workflows for biological applications.
+My research centers on spatiotemporal modeling, time-series forecasting and interpolation, deep learning, computer vision, unsupervised learning, and graph representation learning for computational genomics. I specialize in developing machine learning algorithms for multiscale 3D genome organization analysis using high-resolution Hi-C data, focusing on chromatin loop prediction and Topologically Associating Domain (TAD) identification.
 
-My research objective is to build robust algorithms for understanding 3D genome organization using Hi-C data, particularly for chromatin loop prediction and Topologically Associating Domain (TAD) identification. I combine deep learning, computer vision, graph embeddings, and clustering methods to deliver biologically meaningful, reproducible results.
+Key research contributions include **EmbedTAD** (the first unsupervised TAD caller integrating graph embedding and density-based clustering; *Communications Biology*, 2026), **Robin** (an advanced interactive web platform integrating LLMs for comparative chromatin loop analysis; *NAR Genomics and Bioinformatics*, 2026), **HiCInterpolate** (4D spatiotemporal interpolation of Hi-C contact maps for continuous genome dynamics; *bioRxiv*, 2026), **HiCForecast** (dynamic network optical flow for predicting future chromatin contact maps; *Bioinformatics*, 2025), and a comprehensive benchmark of 22 chromatin loop callers introducing the task-specific **BCCscore** (*BMC Bioinformatics*, 2024). I also have extensive industry software engineering experience designing scalable backend architectures, cloud infrastructure (AWS/Terraform), and containerized biological tools (Docker/Flask).
 
 ## Research Interests
 
+- Spatiotemporal Modeling
+- Time-Series Analysis
 - Deep Learning
 - Computer Vision
-- Time-Series
-- Forecasting
-- Interpolation
-- Flow
-- Transformer Model
-- Diffusion Models
-- Computation
-- Genomics
+- Unsupervised Learning
+- Graph Representation Learning
+- 3D Genome Organization
+- Hi-C Data Analysis
+- Computational Genomics
+- Multimodal & Generative AI
 - Bioinformatics
+- Health Informatics
 
 ## Office Location
 
@@ -39,10 +40,12 @@ F296, UNT Discovery Park
 - [LinkedIn](https://www.linkedin.com/in/h-m-a-mohit-chowdhury/)
 - [GitHub](https://github.com/hmamohit)
 - [Google Scholar](https://scholar.google.com/citations?user=plH24fQAAAAJ&hl=en)
+- [ORCID](https://orcid.org/0009-0000-8687-4064)
 
 ## Selected Publications
 
 1. [@Chowdhury2026.02.06.704438]
 2. [@Chowdhury2025]
-3. [@10.1093/bioinformatics/btaf030]
-4. [@Chowdhury2024]
+3. [@10.1093/nargab/lqag009]
+4. [@10.1093/bioinformatics/btaf030]
+5. [@Chowdhury2024]

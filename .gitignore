@@ -1,2 +1,14 @@
+# OS & IDE
 .DS_Store
 .idea/
+.vscode/
+
+# Agent, AI tooling, and knowledge graph outputs
+.agents/
+.agent/
+graphify-out/
+graphify_out/
+.codegraph/
+.gemini/
+.claude/
+.cursor/

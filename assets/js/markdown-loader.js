@@ -541,6 +541,26 @@ function renderStructuredPage(main, html) {
   main.innerHTML = out.join("\n");
 }
 
+function getSocialIcon(label) {
+  var l = (label || "").toLowerCase();
+  if (l.includes("scholar")) {
+    return '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard me-1" viewBox="0 0 16 16" style="vertical-align: -2px;"><path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.905 3.952a.5.5 0 0 0 .422.941L6.5 7.189V13.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V7.19l6.447-3.209a.5.5 0 0 0 .422-.94L8.211 2.047zM13.5 13a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5v-6l5-2.5 5 2.5v6z"/></svg>';
+  }
+  if (l.includes("orcid")) {
+    return '<i class="fa-brands fa-orcid me-1 text-success"></i>';
+  }
+  if (l.includes("researchgate")) {
+    return '<i class="fa-brands fa-researchgate me-1 text-info"></i>';
+  }
+  if (l.includes("github")) {
+    return '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github me-1" viewBox="0 0 16 16" style="vertical-align: -2px;"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>';
+  }
+  if (l.includes("linkedin")) {
+    return '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin me-1" viewBox="0 0 16 16" style="vertical-align: -2px;"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>';
+  }
+  return "";
+}
+
 function renderHome(main, markdown, bibEntries, newsItems) {
   var bibMap = {};
   bibEntries.forEach(function (e) { bibMap[e.key] = e; });
@@ -588,16 +608,9 @@ function renderHome(main, markdown, bibEntries, newsItems) {
       var connectButtons = nonEmailLinks.map(function (link) {
         var m = link.match(/\[(.*?)\]\((.*?)\)/);
         if (!m) return "";
-        var label = m[1].toLowerCase();
+        var label = m[1];
         var url = m[2];
-        var icon = "";
-        if (label.includes("linkedin")) {
-          icon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>';
-        } else if (label.includes("github")) {
-          icon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>';
-        } else if (label.includes("scholar")) {
-          icon = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16"><path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.905 3.952a.5.5 0 0 0 .422.941L6.5 7.189V13.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5V7.19l6.447-3.209a.5.5 0 0 0 .422-.94L8.211 2.047zM13.5 13a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5v-6l5-2.5 5 2.5v6z"/></svg>';
-        }
+        var icon = getSocialIcon(label);
         return '<a href="' + url + '" target="_blank" rel="noopener" class="btn btn-outline-secondary btn-sm" title="' + label + '">' + icon + ' ' + label + '</a>';
       }).join("");
       connectHtml = '<div class="soft-box p-3 p-md-4"><p class="small mb-2"><strong>Connect</strong></p><div class="d-flex flex-wrap gap-2">' + connectButtons + "</div></div>";
@@ -607,7 +620,7 @@ function renderHome(main, markdown, bibEntries, newsItems) {
   main.innerHTML = [
     '<section id="about" class="section py-5 hero">',
     '<div class="container">',
-    '<div class="d-flex flex-wrap align-items-center gap-2 mb-3"><h1 class="display-5 mb-0">' + parseInline(parsed.title || "Home") + '</h1><a class="btn btn-outline-primary btn-sm" href="assets/pdf/chowdhury_resume_web.pdf" target="_blank" rel="noopener" download>Resume PDF</a></div>',
+    '<div class="d-flex flex-wrap align-items-center gap-2 mb-3"><h1 class="display-5 mb-0">' + parseInline(parsed.title || "Home") + '</h1><div class="d-flex flex-wrap gap-2"><a class="btn btn-outline-primary btn-sm" href="assets/pdf/cv_chowdhury.pdf" target="_blank" rel="noopener" download>CV (PDF)</a><a class="btn btn-outline-secondary btn-sm" href="assets/pdf/resume_chowdhury.pdf" target="_blank" rel="noopener" download>Resume (PDF)</a></div></div>',
     lead ? '<p class="lead mb-4">' + parseInline(lead) + "</p>" : "",
     '<div class="row g-4 g-md-5 align-items-center">',
     '<div class="col-md-8 order-2 order-md-1">',
@@ -623,7 +636,7 @@ function renderHome(main, markdown, bibEntries, newsItems) {
     '</div><div class="col-md-4 order-1 order-md-2">',
     '<div class="profile-card"><img src="' + profileImage + '" class="img-fluid rounded-3 profile-photo" alt="H. M. A. Mohit Chowdhury portrait"></div>',
     "</div></div></div></section>",
-    '<section id="publications" class="section py-5"><div class="container"><h2 class="section-title mb-4">Selected Publications</h2><div class="soft-box p-3 p-md-4"><ol class="publication-list mb-0">' + publications.map(function (p) { return "<li>" + p + "</li>"; }).join("") + '</ol><div class="mt-3 text-end"><a class="btn btn-outline-primary btn-sm" href="publications.html">View all publications</a></div></div></div></section>',
+    '<section id="publications" class="section py-5"><div class="container"><h2 class="section-title mb-4">Selected Publications</h2><div class="soft-box p-3 p-md-4"><ol class="publication-list mb-0">' + publications.map(function (p) { return "<li>" + p + "</li>"; }).join("") + '</ol><div class="mt-3 d-flex flex-wrap justify-content-between align-items-center gap-2"><a class="btn btn-outline-secondary btn-sm" href="https://scholar.google.com/citations?user=plH24fQAAAAJ" target="_blank" rel="noopener">' + getSocialIcon("scholar") + ' Google Scholar Profile</a><a class="btn btn-outline-primary btn-sm" href="publications.html">View all publications &rarr;</a></div></div></div></section>',
     '<section id="news" class="section section-alt py-5"><div class="container"><h2 class="section-title mb-4">News</h2><div class="soft-box p-3 p-md-4 news-box"><ul class="list-unstyled mb-0 news-list">' + newsHtml + '</ul>' + moreNewsHtml + "</div></div></section>",
     '<section class="section py-5"><div class="container"><div class="row g-4 g-lg-5">',
     '<div class="col-lg-4">',
@@ -665,8 +678,37 @@ function renderPublications(main, markdown, bibEntries) {
   } else {
     list = resolveCitations(tokens, bibMap);
   }
-  main.innerHTML = '<section class="page-hero py-4"><div class="container"><h1 class="mb-0">' + parseInline(parsed.title || "Publications") + '</h1></div></section>' +
-    '<section class="section py-5"><div class="container"><div class="soft-box p-3 p-md-4"><ol class="publication-list mb-0">' +
+
+  var rawProfiles = parseList(parsed.sections["Academic Profiles"] || parsed.sections["Profiles"] || "", false);
+  var profileButtonsHtml = "";
+  if (rawProfiles.length > 0) {
+    profileButtonsHtml = rawProfiles.map(function (profile, idx) {
+      var match = profile.match(/^\[(.*?)\]\((.*?)\)$/);
+      if (!match) return "";
+      var label = match[1];
+      var url = match[2];
+      var icon = getSocialIcon(label);
+      var btnCls = idx === 0 ? "btn btn-outline-primary btn-sm" : "btn btn-outline-secondary btn-sm";
+      return '<a class="' + btnCls + '" href="' + url + '" target="_blank" rel="noopener">' + icon + ' ' + parseInline(label) + '</a>';
+    }).filter(Boolean).join(" ");
+  } else {
+    profileButtonsHtml = '<a class="btn btn-outline-primary btn-sm" href="https://scholar.google.com/citations?user=plH24fQAAAAJ" target="_blank" rel="noopener">' +
+      getSocialIcon("scholar") + ' Google Scholar Profile</a> ' +
+      '<a class="btn btn-outline-secondary btn-sm" href="https://orcid.org/0009-0000-8687-4064" target="_blank" rel="noopener">' +
+      getSocialIcon("orcid") + ' ORCID</a>';
+  }
+
+  main.innerHTML = '<section class="page-hero py-4">' +
+    '<div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">' +
+    '<div><h1 class="mb-0">' + parseInline(parsed.title || "Publications") + '</h1></div>' +
+    '<div class="d-flex flex-wrap gap-2">' + profileButtonsHtml + '</div>' +
+    '</div></section>' +
+    '<section class="section py-5"><div class="container"><div class="soft-box p-3 p-md-4">' +
+    '<div class="d-flex flex-wrap justify-content-between align-items-center mb-3 pb-2 border-bottom">' +
+    '<h2 class="h5 mb-0">Full Publication List</h2>' +
+    '<span class="badge text-bg-light border">' + list.length + ' publications</span>' +
+    '</div>' +
+    '<ol class="publication-list mb-0">' +
     list.map(function (item) { return "<li>" + item + "</li>"; }).join("") +
     "</ol></div></div></section>";
 }
@@ -691,12 +733,11 @@ function renderRepositories(main, markdown) {
   var profileButtons = profiles.map(function (profile) {
     var match = profile.match(/^\[(.*?)\]\((.*?)\)$/);
     if (!match) return "";
-    return '<a class="btn btn-outline-primary" href="' + match[2] + '" target="_blank" rel="noopener">' + parseInline(match[1]) + "</a>";
-  }).join("\n");
+    return '<a class="btn btn-outline-primary btn-sm" href="' + match[2] + '" target="_blank" rel="noopener">' + getSocialIcon("github") + ' ' + parseInline(match[1]) + "</a>";
+  }).join(" ");
 
-  main.innerHTML = '<section class="page-hero py-4"><div class="container"><h1 class="mb-0">' + parseInline(parsed.title || "Repositories") + '</h1></div></section>' +
-    '<section class="section py-5"><div class="container"><div class="soft-box p-3 p-md-4 mb-4"><h2 class="h5 mb-3">GitHub Profiles</h2><div class="d-flex flex-wrap gap-2">' +
-    profileButtons + '</div></div><h2 class="section-title mb-4">Featured Repositories</h2><div class="row g-4">' + cards + "</div></div></section>";
+  main.innerHTML = '<section class="page-hero py-4"><div class="container d-flex flex-wrap justify-content-between align-items-center gap-2"><div><h1 class="mb-0">' + parseInline(parsed.title || "Repositories") + '</h1></div><div class="d-flex flex-wrap gap-2">' + profileButtons + '</div></div></section>' +
+    '<section class="section py-5"><div class="container"><h2 class="section-title mb-4">Featured Repositories</h2><div class="row g-4">' + cards + "</div></div></section>";
 }
 
 function renderNewsArchive(main, markdown) {
@@ -719,9 +760,24 @@ function renderResume(main, markdown, bibEntries) {
   var parsed = splitSections(markdown);
   var bibMap = {};
   bibEntries.forEach(function (e) { bibMap[e.key] = e; });
-  var downloadMatch = (parsed.sections.Download || "").match(/\[(.*?)\]\((.*?)\)/);
-  var downloadHref = downloadMatch ? downloadMatch[2] : "assets/pdf/chowdhury_resume_web.pdf";
-  var downloadLabel = downloadMatch ? downloadMatch[1] : "Download Resume";
+  var downloadItems = parseList(parsed.sections.Download || "", false);
+  var downloadButtonsHtml = "";
+  if (downloadItems.length > 0) {
+    downloadButtonsHtml = downloadItems.map(function (item, idx) {
+      var m = item.match(/\[(.*?)\]\((.*?)\)/);
+      if (!m) return "";
+      var btnClass = idx === 0 ? "btn btn-primary" : "btn btn-outline-primary";
+      return '<a class="' + btnClass + '" href="' + m[2] + '" target="_blank" rel="noopener" download>' + parseInline(m[1]) + '</a>';
+    }).filter(Boolean).join(" ");
+  }
+  if (!downloadButtonsHtml) {
+    var downloadMatch = (parsed.sections.Download || "").match(/\[(.*?)\]\((.*?)\)/);
+    if (downloadMatch) {
+      downloadButtonsHtml = '<a class="btn btn-primary" href="' + downloadMatch[2] + '" target="_blank" rel="noopener" download>' + parseInline(downloadMatch[1]) + '</a>';
+    } else {
+      downloadButtonsHtml = '<a class="btn btn-primary" href="assets/pdf/cv_chowdhury.pdf" target="_blank" rel="noopener" download>Download CV (PDF)</a> <a class="btn btn-outline-primary" href="assets/pdf/resume_chowdhury.pdf" target="_blank" rel="noopener" download>Download Resume (PDF)</a>';
+    }
+  }
 
   var body = parsed.sectionOrder
     .filter(function (name) { return name !== "Download"; })
@@ -756,7 +812,7 @@ function renderResume(main, markdown, bibEntries) {
         }
       }
 
-      if (/^Peer-reviewed Journal Articles\b/.test(name)) {
+      if (/^(peer-reviewed journal articles|selected publications|publications)\b/i.test(name)) {
         var cites = parseList(sectionMd, true);
         var rendered = [];
         if (cites.length === 1 && cites[0].trim().toLowerCase() === "@all") {
@@ -795,8 +851,8 @@ function renderResume(main, markdown, bibEntries) {
     .join("\n");
 
   main.innerHTML = '<section class="page-hero py-4"><div class="container d-flex flex-wrap justify-content-between align-items-center gap-2"><div><h1 class="mb-0">' +
-    parseInline(parsed.title || "Resume") + '</h1></div><a class="btn btn-primary" href="' + downloadHref + '" target="_blank" rel="noopener" download>' +
-    parseInline(downloadLabel) + '</a></div></section><section class="section py-5"><div class="container">' + body + "</div></section>";
+    parseInline(parsed.title || "Resume") + '</h1></div><div class="d-flex flex-wrap gap-2">' +
+    downloadButtonsHtml + '</div></div></section><section class="section py-5"><div class="container">' + body + "</div></section>";
 }
 
 document.addEventListener("DOMContentLoaded", async function () {
