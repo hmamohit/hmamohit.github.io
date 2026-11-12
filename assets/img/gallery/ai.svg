@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Artificial Intelligence</title>
+  <desc id="desc">Dummy placeholder image for artificial intelligence.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f4c81"/>
+      <stop offset="100%" stop-color="#2f88c8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <g opacity="0.18" fill="#ffffff">
+    <circle cx="210" cy="190" r="120"/>
+    <circle cx="1020" cy="640" r="180"/>
+    <circle cx="760" cy="220" r="90"/>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-width="3" opacity="0.35">
+    <path d="M120 550 C300 460 480 660 660 560 S980 430 1120 520"/>
+    <path d="M160 310 C310 210 470 350 610 280 S900 190 1060 280"/>
+  </g>
+  <text x="70" y="120" fill="#f7fbff" font-size="62" font-weight="700" font-family="IBM Plex Sans, Arial, sans-serif">Artificial Intelligence</text>
+  <text x="70" y="178" fill="#dcefff" font-size="34" font-weight="500" font-family="IBM Plex Sans, Arial, sans-serif">Dummy Visual Placeholder</text>
+</svg>

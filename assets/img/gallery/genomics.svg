@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Genomics</title>
+  <desc id="desc">Dummy placeholder image for genomics.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f5f4a"/>
+      <stop offset="100%" stop-color="#4c956c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <g opacity="0.22" fill="#ffffff">
+    <circle cx="210" cy="180" r="90"/>
+    <circle cx="980" cy="590" r="170"/>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-width="4" opacity="0.45">
+    <path d="M280 170 C470 300 730 90 920 220"/>
+    <path d="M280 230 C470 360 730 150 920 280"/>
+    <path d="M280 290 C470 420 730 210 920 340"/>
+    <circle cx="420" cy="250" r="8" fill="#ffffff"/>
+    <circle cx="620" cy="210" r="8" fill="#ffffff"/>
+    <circle cx="770" cy="285" r="8" fill="#ffffff"/>
+  </g>
+  <text x="70" y="120" fill="#f2fff9" font-size="62" font-weight="700" font-family="IBM Plex Sans, Arial, sans-serif">Genomics</text>
+  <text x="70" y="178" fill="#def9ed" font-size="34" font-weight="500" font-family="IBM Plex Sans, Arial, sans-serif">Dummy Visual Placeholder</text>
+</svg>
